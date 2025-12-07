@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 🔍 تحسينات SEO -->
+    <title>صيانة بيتك الأردن | خدمات صيانة منزلية في عمّان | كهرباء - سباكة - تمديدات</title>
+    <meta name="description" content="خدمات الصيانة المنزلية في الأردن - عمّان: كهرباء، سباكة، تمديدات، نجارة، دهان، تكييف، أجهزة منزلية وتنظيف. فريق فني محترف بأسعار مناسبة. خدمة 24/7 في جميع مناطق عمّان.">
+    <meta name="keywords" content="صيانة منزلية في الأردن, كهرباء عمان, سباكة عمان, تمديدات عمان, نجارة عمان, دهان عمان, تكييف عمان, تنظيف منازل عمان, فني منازل عمان, صيانة أجهزة منزلية عمان, فني كهرباء عمّان, فني سباكة عمّان, صيانة منازل عمّان">
+    <meta name="author" content="موقع صيانة بيتك الأردن">
+    <meta name="robots" content="index, follow">
+    
+    <!-- 🌐 Open Graph -->
+    <meta property="og:title" content="صيانة بيتك الأردن - خدمات الصيانة المنزلية في عمّان">
+    <meta property="og:description" content="فنيون محترفون لجميع أعمال الصيانة المنزلية في عمّان - خدمة 24/7 - أسعار مناسبة">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/003366/ffffff?text=صيانة+بيتك+الأردن">
+    <meta property="og:url" content="https://seyanaat-baytek.com">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ar_JO">
+    
+    <!-- 📍 بيانات الموقع الجغرافي -->
+    <meta name="geo.region" content="JO-AM">
+    <meta name="geo.placename" content="عمّان">
+    <meta name="geo.position" content="31.9539;35.9106">
+    <meta name="ICBM" content="31.9539, 35.9106">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --turquoise: #40E0D0;
+            --dark-blue: #003366;
+            --light-blue: #1E90FF;
+            --white: #FFFFFF;
+            --light-gray: #F5F5F5;
+            --gray: #DDDDDD;
+            --success: #28a745;
+            --danger: #dc3545;
+            --warning: #ffc107;
+            --jordan-green: #007a3d;
+            --jordan-red: #ce1126;
+            --jordan-black: #000000;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Tahoma', 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: var(--light-gray);
+            color: var(--dark-blue);
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* 🇯🇴 شعار الأردن */
+        .jordan-flag {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 30px;
+            height: 20px;
+            background: linear-gradient(to bottom, 
+                #000000 0%, #000000 33.33%,
+                #ffffff 33.33%, #ffffff 66.66%,
+                #007a3d 66.66%, #007a3d 100%);
+            border-left: 10px solid #ce1126;
+            border-radius: 2px;
+            z-index: 1001;
+        }
+        
+        /* 🏠 الهيدر العام */
+        .public-header {
+            background: linear-gradient(135deg, var(--dark-blue), #002244);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            border-bottom: 3px solid var(--jordan-green);
+        }
+        
+        .public-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+            color: white;
+        }
+        
+        .nav-logo-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            border: 2px solid var(--turquoise);
+            box-shadow: 0 0 10px rgba(64, 224, 208, 0.5);
+        }
+        
+        .logo-text h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+            color: white;
+        }
+        
+        .logo-text .jordan {
+            color: var(--turquoise);
+            font-size: 14px;
+            background: rgba(255,255,255,0.1);
+            padding: 2px 8px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        
+        /* 📞 شريط الاتصال السريع */
+        .quick-contact-bar {
+            background: linear-gradient(135deg, var(--jordan-green), #005c2d);
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 14px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .contact-item i {
+            color: var(--turquoise);
+        }
+        
+        .contact-item a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .contact-item a:hover {
+            color: var(--turquoise);
+        }
+        
+        /* 🎯 قسم البطل */
+        .hero-section {
+            padding: 100px 0;
+            background: linear-gradient(rgba(0, 51, 102, 0.9), rgba(0, 34, 68, 0.9)),
+                        url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .hero-logo {
+            width: 150px;
+            height: 150px;
+            border-radius: 20px;
+            margin-bottom: 25px;
+            border: 5px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .hero-title {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .hero-title .jordan {
+            color: var(--turquoise);
+            position: relative;
+        }
+        
+        .hero-title .jordan::after {
+            content: "🇯🇴";
+            margin-right: 10px;
+            font-size: 1.5rem;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* 📞 أزرار الاتصال */
+        .contact-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        
+        .contact-btn {
+            padding: 15px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s;
+            min-width: 200px;
+            justify-content: center;
+            font-size: 16px;
+        }
+        
+        .contact-btn.whatsapp {
+            background: #25D366;
+            color: white;
+        }
+        
+        .contact-btn.whatsapp:hover {
+            background: #128C7E;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3);
+        }
+        
+        .contact-btn.phone {
+            background: var(--turquoise);
+            color: var(--dark-blue);
+        }
+        
+        .contact-btn.phone:hover {
+            background: white;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(64, 224, 208, 0.3);
+        }
+        
+        .contact-btn.email {
+            background: var(--dark-blue);
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .contact-btn.email:hover {
+            background: white;
+            color: var(--dark-blue);
+            transform: translateY(-3px);
+        }
+        
+        /* 🛠️ قسم الخدمات */
+        .services-section {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: var(--dark-blue);
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            color: var(--jordan-green);
+            margin-bottom: 50px;
+            font-size: 1.1rem;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+            border-color: var(--turquoise);
+        }
+        
+        .service-header {
+            padding: 25px;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+        
+        .service-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+        
+        .service-name {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .service-price {
+            background: rgba(255,255,255,0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+        }
+        
+        .service-body {
+            padding: 25px;
+        }
+        
+        .service-description {
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        
+        .service-features {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        
+        .service-features li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #eee;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .service-features li i {
+            color: var(--turquoise);
+        }
+        
+        /* 📍 مناطق الخدمة */
+        .areas-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, var(--light-gray), #e8f4f8);
+        }
+        
+        .areas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        .area-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            border-left: 4px solid var(--jordan-green);
+        }
+        
+        .area-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+            border-left-color: var(--turquoise);
+        }
+        
+        .area-card i {
+            color: var(--jordan-green);
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        /* 👤 قسم التسجيل */
+        .register-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, var(--dark-blue), #002244);
+            color: white;
+            text-align: center;
+        }
+        
+        .register-box {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255,255,255,0.2);
+        }
+        
+        /* 📞 قسم الاتصال */
+        .contact-section {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+        
+        .contact-card {
+            background: var(--light-gray);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+        
+        .contact-card:hover {
+            border-color: var(--turquoise);
+            transform: translateY(-5px);
+        }
+        
+        .contact-card i {
+            font-size: 40px;
+            color: var(--jordan-green);
+            margin-bottom: 20px;
+        }
+        
+        .contact-card h3 {
+            margin-bottom: 15px;
+            color: var(--dark-blue);
+        }
+        
+        .contact-card p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .contact-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background: var(--turquoise);
+            color: var(--dark-blue);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .contact-link:hover {
+            background: var(--jordan-green);
+            color: white;
+            transform: scale(1.05);
+        }
+        
+        /* 🦶 الفوتر */
+        .footer {
+            background: linear-gradient(135deg, #001a33, #000);
+            color: white;
+            padding: 50px 0 20px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-logo img {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border: 2px solid var(--turquoise);
+        }
+        
+        .footer-title {
+            color: var(--turquoise);
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: var(--turquoise);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #aaa;
+            font-size: 14px;
+        }
+        
+        /* 🎨 ألوان الخدمات */
+        .electricity { background: linear-gradient(135deg, #FF6B6B, #FF8E8E); }
+        .plumbing { background: linear-gradient(135deg, #4ECDC4, #6EE6DE); }
+        .extensions { background: linear-gradient(135deg, #45B7D1, #67D9F1); }
+        .carpentry { background: linear-gradient(135deg, #96CEB4, #B8F0D4); }
+        .painting { background: linear-gradient(135deg, #FFEAA7, #FFF4C9); color: #333 !important; }
+        .ac { background: linear-gradient(135deg, #DDA0DD, #F5C2F5); }
+        .appliances { background: linear-gradient(135deg, #98D8C8, #BAFAE8); }
+        .cleaning { background: linear-gradient(135deg, #F7DC6F, #FFF68F); color: #333 !important; }
+        
+        /* 📱 تصميم متجاوب */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .contact-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .contact-btn {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+        
+        /* 🇯🇴 تأثيرات وطنية */
+        .jordan-theme {
+            position: relative;
+        }
+        
+        .jordan-theme::before {
+            content: "🇯🇴";
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            font-size: 20px;
+            opacity: 0.3;
+        }
+        
+        .hashtag {
+            background: linear-gradient(135deg, var(--jordan-green), var(--jordan-red));
+            color: white;
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 🇯🇴 علم الأردن -->
+    <div class="jordan-flag" title="الأردن"></div>
+    
+    <!-- 📞 شريط الاتصال السريع -->
+    <div class="quick-contact-bar">
+        <div class="container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:0780106684">0780106684</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-whatsapp"></i>
+                    <a href="https://wa.me/962780106684" target="_blank">واتساب</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:aljmlmsb4@gmail.com">aljmlmsb4@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>عمّان - الأردن</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 🏠 الهيدر الرئيسي -->
+    <header class="public-header">
+        <div class="container">
+            <nav class="public-nav">
+                <a href="#" class="nav-logo">
+                    <img src="WhatsApp Image 2025-11-20 at 10.20.34 PM.jpeg" alt="شعار صيانة بيتك الأردن" class="nav-logo-img">
+                    <div class="logo-text">
+                        <h1>صيانة بيتك <span class="jordan">الأردن</span></h1>
+                        <p>خدمات الصيانة المنزلية في عمّان</p>
+                    </div>
+                </a>
+                
+                <div style="display: flex; gap: 15px; align-items: center;">
+                    <a href="#services" style="color: white; text-decoration: none; padding: 8px 15px; background: rgba(255,255,255,0.1); border-radius: 5px;">
+                        <i class="fas fa-tools"></i> خدماتنا
+                    </a>
+                    <a href="#contact" style="color: white; text-decoration: none; padding: 8px 15px; background: var(--turquoise); border-radius: 5px; color: var(--dark-blue); font-weight: bold;">
+                        <i class="fas fa-phone"></i> اتصل الآن
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- 🎯 قسم البطل -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <img src="WhatsApp Image 2025-11-20 at 10.20.34 PM.jpeg" alt="شعار صيانة بيتك الأردن" class="hero-logo">
+                <h1 class="hero-title">
+                    صيانة بيتك <span class="jordan">الأردن</span>
+                </h1>
+                <p class="hero-subtitle">
+                    نقدم أفضل خدمات الصيانة المنزلية في عمّان والأردن. فريق فني محترف متاح على مدار الساعة لخدمتك. 
+                    أسعار مناسبة وجودة مضمونة.
+                </p>
+                
+                <div class="contact-buttons">
+                    <a href="https://wa.me/962780106684" class="contact-btn whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i> واتساب الآن
+                    </a>
+                    <a href="tel:0780106684" class="contact-btn phone">
+                        <i class="fas fa-phone"></i> اتصل: 0780106684
+                    </a>
+                    <a href="mailto:aljmlmsb4@gmail.com" class="contact-btn email">
+                        <i class="fas fa-envelope"></i> aljmlmsb4@gmail.com
+                    </a>
+                </div>
+                
+                <div style="margin-top: 30px; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+                    <span class="hashtag">#صيانة_عمان</span>
+                    <span class="hashtag">#فني_كهرباء_عمان</span>
+                    <span class="hashtag">#سباكة_عمان</span>
+                    <span class="hashtag">#صيانة_منازل_الاردن</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 🛠️ الخدمات -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 class="section-title">خدماتنا في عمّان</h2>
+            <p class="section-subtitle">نقدم مجموعة واسعة من خدمات الصيانة المنزلية بأسعار مناسبة</p>
+            
+            <div class="services-grid">
+                <!-- كهرباء -->
+                <div class="service-card">
+                    <div class="service-header electricity">
+                        <div class="service-icon"><i class="fas fa-bolt"></i></div>
+                        <h3 class="service-name">صيانة الكهرباء</h3>
+                        <div class="service-price">من 15 دينار</div>
+                    </div>
+                    <div class="service-body">
+                        <p class="service-description">إصلاح الأعطال الكهربائية والتركيبات والتمديدات الكهربائية المنزلية في جميع مناطق عمّان</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> فحص كهربائي شامل</li>
+                            <li><i class="fas fa-check"></i> إصلاح الأعطال الكهربائية</li>
+                            <li><i class="fas fa-check"></i> تمديدات كهربائية جديدة</li>
+                            <li><i class="fas fa-check"></i> تركيب لوحات كهربائية</li>
+                        </ul>
+                        <a href="tel:0780106684" class="contact-link" style="width: 100%; display: block; text-align: center;">
+                            اطلب الخدمة: 0780106684
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- سباكة -->
+                <div class="service-card">
+                    <div class="service-header plumbing">
+                        <div class="service-icon"><i class="fas fa-faucet"></i></div>
+                        <h3 class="service-name">السباكة</h3>
+                        <div class="service-price">من 20 دينار</div>
+                    </div>
+                    <div class="service-body">
+                        <p class="service-description">إصلاح تسربات المياه وتركيب الأدوات الصحية وتنظيف المجاري في عمّان</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> إصلاح التسربات</li>
+                            <li><i class="fas fa-check"></i> تركيب الأدوات الصحية</li>
+                            <li><i class="fas fa-check"></i> تنظيف المجاري</li>
+                            <li><i class="fas fa-check"></i> صيانة سخانات المياه</li>
+                        </ul>
+                        <a href="https://wa.me/962780106684" class="contact-link" style="width: 100%; display: block; text-align: center; background: #25D366;">
+                            <i class="fab fa-whatsapp"></i> واتساب الآن
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- تمديدات -->
+                <div class="service-card">
+                    <div class="service-header extensions">
+                        <div class="service-icon"><i class="fas fa-tools"></i></div>
+                        <h3 class="service-name">التمديدات</h3>
+                        <div class="service-price">من 25 دينار</div>
+                    </div>
+                    <div class="service-body">
+                        <p class="service-description">تمديدات المياه والكهرباء والغاز والتكييف المركزية في عمّان</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> تمديدات مياه جديدة</li>
+                            <li><i class="fas fa-check"></i> تمديدات كهرباء إضافية</li>
+                            <li><i class="fas fa-check"></i> تمديدات غاز آمنة</li>
+                            <li><i class="fas fa-check"></i> أنظمة التكييف المركزي</li>
+                        </ul>
+                        <a href="tel:0780106684" class="contact-link" style="width: 100%; display: block; text-align: center;">
+                            <i class="fas fa-phone"></i> 0780106684
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- خدمات إضافية -->
+            <div class="services-grid" style="margin-top: 30px;">
+                <!-- نجارة -->
+                <div class="service-card">
+                    <div class="service-header carpentry">
+                        <div class="service-icon"><i class="fas fa-hammer"></i></div>
+                        <h3 class="service-name">النجارة</h3>
+                        <div class="service-price">من 18 دينار</div>
+                    </div>
+                    <div class="service-body">
+                        <p>إصلاح الأثاث والأبواب والنوافذ</p>
+                        <a href="tel:0780106684" class="contact-link">اتصل بنا</a>
+                    </div>
+                </div>
+                
+                <!-- دهان -->
+                <div class="service-card">
+                    <div class="service-header painting">
+                        <div class="service-icon"><i class="fas fa-paint-roller"></i></div>
+                        <h3 class="service-name" style="color: #333;">الدهان</h3>
+                        <div class="service-price" style="color: #333; background: rgba(0,0,0,0.1);">من 12 دينار</div>
+                    </div>
+                    <div class="service-body">
+                        <p>دهان الجدران والأسقف والأثاث</p>
+                        <a href="tel:0780106684" class="contact-link">اتصل بنا</a>
+                    </div>
+                </div>
+                
+                <!-- تكييف -->
+                <div class="service-card">
+                    <div class="service-header ac">
+                        <div class="service-icon"><i class="fas fa-wind"></i></div>
+                        <h3 class="service-name">التكييف</h3>
+                        <div class="service-price">من 30 دينار</div>
+                    </div>
+                    <div class="service-body">
+                        <p>صيانة وتركيب أجهزة التكييف</p>
+                        <a href="tel:0780106684" class="contact-link">اتصل بنا</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 📍 مناطق الخدمة -->
+    <section class="areas-section">
+        <div class="container">
+            <h2 class="section-title">نغطي جميع مناطق عمّان</h2>
+            <p class="section-subtitle">خدماتنا متاحة في جميع مناطق العاصمة عمّان</p>
+            
+            <div class="areas-grid">
+                <div class="area-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>وسط البلد</h4>
+                    <p>الخدمة خلال 30 دقيقة</p>
+                </div>
+                <div class="area-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>الصويفية</h4>
+                    <p>خدمة سريعة</p>
+                </div>
+                <div class="area-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>خلدا</h4>
+                    <p>متاح على مدار الساعة</p>
+                </div>
+                <div class="area-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>أبو نصير</h4>
+                    <p>فنيون متخصصون</p>
+                </div>
+                <div class="area-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>الشميساني</h4>
+                    <p>خدمة فورية</p>
+                </div>
+                <div class="area-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>جبال التاج</h4>
+                    <p>جميع الخدمات متاحة</p>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 30px;">
+                <p style="color: #666;">جميع مناطق عمّان: طبربور، ماركا، الجبيهة، شفا بدران، وغيرها</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 📞 قسم الاتصال -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">تواصل معنا في الأردن</h2>
+            <p class="section-subtitle">نحن هنا لخدمتك في أي وقت ومن أي مكان في عمّان</p>
+            
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>اتصل بنا</h3>
+                    <p>اتصل الآن للحصول على خدمة سريعة ومباشرة</p>
+                    <a href="tel:0780106684" class="contact-link">
+                        <i class="fas fa-phone"></i> 0780106684
+                    </a>
+                </div>
+                
+                <div class="contact-card">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>واتساب</h3>
+                    <p>راسلنا على واتساب للحصول على رد سريع</p>
+                    <a href="https://wa.me/962780106684" class="contact-link" target="_blank" style="background: #25D366; color: white;">
+                        <i class="fab fa-whatsapp"></i> اضغط للدردشة
+                    </a>
+                </div>
+                
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>البريد الإلكتروني</h3>
+                    <p>أرسل لنا بريداً إلكترونياً للحصول على عروض خاصة</p>
+                    <a href="mailto:aljmlmsb4@gmail.com" class="contact-link">
+                        <i class="fas fa-envelope"></i> aljmlmsb4@gmail.com
+                    </a>
+                </div>
+            </div>
+            
+            <!-- معلومات الاتصال الإضافية -->
+            <div style="margin-top: 50px; background: var(--light-gray); padding: 30px; border-radius: 15px; text-align: center;">
+                <h3 style="margin-bottom: 20px; color: var(--dark-blue);">معلومات الاتصال الكاملة</h3>
+                <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+                    <div>
+                        <h4 style="color: var(--jordan-green); margin-bottom: 10px;"><i class="fas fa-clock"></i> ساعات العمل</h4>
+                        <p>24 ساعة / 7 أيام في الأسبوع</p>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--jordan-green); margin-bottom: 10px;"><i class="fas fa-map-marker-alt"></i> الموقع</h4>
+                        <p>عمّان - الأردن</p>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--jordan-green); margin-bottom: 10px;"><i class="fas fa-language"></i> اللغة</h4>
+                        <p>العربية والإنجليزية</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 🦶 الفوتر -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <img src="WhatsApp Image 2025-11-20 at 10.20.34 PM.jpeg" alt="شعار صيانة بيتك الأردن" class="footer-logo-img">
+                    <h3 style="color: white; margin-bottom: 15px;">صيانة بيتك الأردن</h3>
+                    <p>نقدم أفضل خدمات الصيانة المنزلية في عمّان والأردن. فريق فني محترف على مدار الساعة.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 class="footer-title">روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#services">الخدمات</a></li>
+                        <li><a href="#contact">اتصل بنا</a></li>
+                        <li><a href="tel:0780106684">طلب خدمة</a></li>
+                        <li><a href="https://wa.me/962780106684">واتساب مباشر</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 class="footer-title">معلومات التواصل</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> 0780106684</li>
+                        <li><i class="fas fa-whatsapp"></i> 962780106684+</li>
+                        <li><i class="fas fa-envelope"></i> aljmlmsb4@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> عمّان - الأردن</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 class="footer-title">تابعنا</h4>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook"></i> فيسبوك</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i> انستغرام</a></li>
+                        <li><a href="#"><i class="fab fa-tiktok"></i> تيك توك</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>© 2024 صيانة بيتك الأردن - جميع الحقوق محفوظة | عمّان - الأردن</p>
+                <p style="margin-top: 10px; font-size: 14px;">
+                    هاتف: <a href="tel:0780106684" style="color: var(--turquoise);">0780106684</a> | 
+                    واتساب: <a href="https://wa.me/962780106684" style="color: var(--turquoise);">اضغط هنا</a> | 
+                    بريد: <a href="mailto:aljmlmsb4@gmail.com" style="color: var(--turquoise);">aljmlmsb4@gmail.com</a>
+                </p>
+                <p style="margin-top: 10px; font-size: 12px; color: #888;">
+                    يمكن لأي شخص في الأردن طلب الخدمة عبر الاتصال أو واتساب أو البريد الإلكتروني
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // دالة للاتصال
+        function makeCall() {
+            window.location.href = 'tel:0780106684';
+        }
+        
+        // دالة للواتساب
+        function openWhatsApp() {
+            window.open('https://wa.me/962780106684', '_blank');
+        }
+        
+        // دالة للبريد
+        function sendEmail() {
+            window.location.href = 'mailto:aljmlmsb4@gmail.com?subject=طلب خدمة صيانة&body=مرحباً، أريد خدمة صيانة منزلية';
+        }
+        
+        // إضافة تأثيرات للاتصال
+        document.addEventListener('DOMContentLoaded', function() {
+            // إضافة أرقام الاتصال في النصوص
+            const phoneElements = document.querySelectorAll('.phone-number');
+            phoneElements.forEach(el => {
+                el.textContent = '0780106684';
+            });
+            
+            // إضافة تأثير عند التمرير
+            window.addEventListener('scroll', function() {
+                const header = document.querySelector('.public-header');
+                if (window.scrollY > 100) {
+                    header.style.boxShadow = '0 5px 20px rgba(0,0,0,0.2)';
+                } else {
+                    header.style.boxShadow = '0 2px 15px rgba(0,0,0,0.1)';
+                }
+            });
+            
+            // رسالة ترحيب
+            console.log('مرحباً في موقع صيانة بيتك الأردن!');
+            console.log('للتواصل: 0780106684');
+            console.log('البريد: aljmlmsb4@gmail.com');
+        });
+        
+        // نسخ رقم الهاتف
+        function copyPhoneNumber() {
+            navigator.clipboard.writeText('0780106684');
+            alert('تم نسخ رقم الهاتف: 0780106684');
+        }
+        
+        // نسخ البريد
+        function copyEmail() {
+            navigator.clipboard.writeText('aljmlmsb4@gmail.com');
+            alert('تم نسخ البريد الإلكتروني: aljmlmsb4@gmail.com');
+        }
+    </script>
+</body>
+</html>
