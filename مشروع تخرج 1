@@ -1,0 +1,3360 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صيانة بيتك - خدمات الصيانة المنزلية المتكاملة</title>
+    <meta name="description" content="نقدم خدمات الصيانة المنزلية المتكاملة: كهرباء، سباكة، تمديدات، نجارة، دهان، تكييف، أجهزة منزلية وتنظيف. فريق فني محترف بأسعار مناسبة.">
+    <meta name="keywords" content="صيانة منزلية, كهرباء, سباكة, تمديدات, نجارة, دهان, تكييف, تنظيف منازل, فني منازل, صيانة أجهزة منزلية">
+    <meta name="author" content="صيانة بيتك">
+    <meta name="robots" content="index, follow">
+    
+    <!-- إضافات مهمة للهواتف -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    
+    <!-- Open Graph للشبكات الاجتماعية -->
+    <meta property="og:title" content="صيانة بيتك - خدمات الصيانة المنزلية">
+    <meta property="og:description" content="خدمات صيانة منزلية شاملة بأسعار مناسبة">
+    <meta property="og:image" content="https://i.ibb.co/WN9k4DmX/Whats-App-Image-2025-11-11-at-5-40-51-PM-1.jpg">
+    <meta property="og:url" content="https://example.com">
+    <meta property="og:type" content="website">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --turquoise: #40E0D0;
+            --dark-blue: #003366;
+            --light-blue: #1E90FF;
+            --white: #FFFFFF;
+            --light-gray: #F5F5F5;
+            --gray: #DDDDDD;
+            --success: #28a745;
+            --danger: #dc3545;
+            --warning: #ffc107;
+            --pending: #ffc107;
+            --approved: #28a745;
+            --rejected: #dc3545;
+            --in-progress: #17a2b8;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--light-gray);
+            color: var(--dark-blue);
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* ========== الشعار النهائي من الإنترنت - تم التعديل هنا ========== */
+        .header-logo-img,
+        .logo-img {
+            display: block;
+            object-fit: contain;
+            border-radius: 10px;
+            border: 3px solid var(--turquoise);
+            background-color: var(--dark-blue);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        /* شعار الهيدر - زيادة الحجم */
+        .header-logo-img {
+            width: 90px;
+            height: 90px;
+            min-width: 90px;
+            min-height: 90px;
+        }
+        
+        /* شعار كبير */
+        .logo-img {
+            width: 250px;
+            height: 250px;
+            margin: 0 auto;
+        }
+        
+        /* للهواتف */
+        @media (max-width: 768px) {
+            .header-logo-img {
+                width: 70px;
+                height: 70px;
+                min-width: 70px;
+                min-height: 70px;
+            }
+            
+            .header-logo h1 {
+                font-size: 18px !important;
+            }
+            
+            .logo-img {
+                width: 200px;
+                height: 120px;
+            }
+        }
+        
+        /* شعار احتياطي إذا فشل تحميل الصورة */
+        .logo-fallback {
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+            color: white !important;
+            font-weight: bold;
+            font-size: 16px;
+            text-align: center;
+            background: linear-gradient(135deg, var(--dark-blue) 0%, var(--light-blue) 100%) !important;
+        }
+        
+        .logo-img.logo-fallback {
+            font-size: 20px;
+        }
+        
+        /* ========== صفحة تسجيل الدخول ========== */
+        .login-page {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, var(--turquoise) 0%, var(--light-blue) 100%);
+            padding: 20px;
+        }
+        
+        .login-card {
+            background-color: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 100%;
+            max-width: 400px;
+        }
+        
+        .logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .logo h1 {
+            color: var(--dark-blue);
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+        
+        .logo p {
+            color: var(--light-blue);
+            font-size: 16px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+        
+        input, select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid var(--gray);
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border 0.3s;
+        }
+        
+        input:focus, select:focus {
+            border-color: var(--turquoise);
+            outline: none;
+        }
+        
+        .password-container {
+            position: relative;
+        }
+        
+        .password-toggle {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: #666;
+            cursor: pointer;
+            padding: 5px;
+        }
+        
+        .password-toggle:hover {
+            color: var(--dark-blue);
+        }
+        
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background-color: var(--dark-blue);
+            color: var(--white);
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-align: center;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        
+        .btn:hover {
+            background-color: var(--light-blue);
+        }
+        
+        .btn-secondary {
+            background-color: var(--turquoise);
+            color: var(--dark-blue);
+        }
+        
+        .btn-secondary:hover {
+            background-color: #30d0c0;
+        }
+        
+        .btn-admin {
+            background-color: #6c757d;
+        }
+        
+        .btn-admin:hover {
+            background-color: #5a6268;
+        }
+        
+        /* ========== الصفحة الرئيسية ========== */
+        .header {
+            background-color: var(--dark-blue);
+            color: var(--white);
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        /* ========== تعديل الهيدر لاستيعاب الشعار الكبير ========== */
+        .header-logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            min-height: 90px;
+        }
+        
+        .public-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            min-height: 90px;
+        }
+        
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .logout-btn {
+            background-color: var(--turquoise);
+            color: var(--dark-blue);
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 500;
+        }
+        
+        /* ========== الخدمات ========== */
+        .services-section {
+            padding: 40px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+            color: var(--dark-blue);
+            font-size: 28px;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .service-card {
+            background-color: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        }
+        
+        .service-icon {
+            background-color: var(--turquoise);
+            color: var(--dark-blue);
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+        }
+        
+        .service-info {
+            padding: 20px;
+        }
+        
+        .service-info h3 {
+            margin-bottom: 10px;
+            color: var(--dark-blue);
+        }
+        
+        .service-price {
+            color: var(--light-blue);
+            font-weight: bold;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        
+        /* ========== صفحة الخدمة ========== */
+        .service-page {
+            padding: 30px 0;
+        }
+        
+        .page-title {
+            margin-bottom: 30px;
+            color: var(--dark-blue);
+            font-size: 28px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .page-title i {
+            margin-left: 10px;
+            color: var(--turquoise);
+        }
+        
+        .back-btn {
+            background-color: var(--dark-blue);
+            color: var(--white);
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            display: inline-flex;
+            align-items: center;
+        }
+        
+        .back-btn i {
+            margin-right: 5px;
+        }
+        
+        .service-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        
+        @media (max-width: 768px) {
+            .service-content {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .workers-section, .request-form-section {
+            background-color: var(--white);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .section-subtitle {
+            margin-bottom: 20px;
+            color: var(--dark-blue);
+            font-size: 20px;
+            border-bottom: 2px solid var(--turquoise);
+            padding-bottom: 10px;
+        }
+        
+        .worker-card {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            border: 1px solid var(--gray);
+            border-radius: 8px;
+            margin-bottom: 15px;
+            background-color: var(--light-gray);
+        }
+        
+        .worker-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-left: 15px;
+        }
+        
+        .worker-info {
+            flex: 1;
+        }
+        
+        .worker-name {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .worker-specialty {
+            color: var(--light-blue);
+            margin-bottom: 5px;
+        }
+        
+        .worker-exp {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        
+        .worker-price {
+            color: var(--success);
+            font-weight: bold;
+            font-size: 14px;
+        }
+        
+        .rating {
+            color: #FFD700;
+        }
+        
+        .request-form {
+            display: grid;
+            gap: 15px;
+        }
+        
+        textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid var(--gray);
+            border-radius: 5px;
+            font-size: 16px;
+            min-height: 100px;
+            resize: vertical;
+        }
+        
+        /* ========== الإشعارات ========== */
+        .notification {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 15px 25px;
+            border-radius: 5px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            display: none;
+            max-width: 90%;
+        }
+        
+        .notification.success {
+            background-color: var(--success);
+            color: white;
+        }
+        
+        .notification.error {
+            background-color: var(--danger);
+            color: white;
+        }
+        
+        .notification.warning {
+            background-color: var(--warning);
+            color: #212529;
+        }
+        
+        /* ========== الصفحات ========== */
+        .page {
+            display: none;
+        }
+        
+        .page.active {
+            display: block;
+        }
+        
+        /* ========== لوحة الإدارة ========== */
+        .admin-panel {
+            padding: 30px 0;
+        }
+        
+        .admin-tabs {
+            display: flex;
+            margin-bottom: 20px;
+            border-bottom: 1px solid var(--gray);
+            flex-wrap: wrap;
+        }
+        
+        .admin-tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+        }
+        
+        .admin-tab.active {
+            border-bottom-color: var(--turquoise);
+            color: var(--turquoise);
+            font-weight: 600;
+        }
+        
+        .admin-content {
+            background-color: var(--white);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .admin-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        .admin-table th, .admin-table td {
+            padding: 12px 15px;
+            text-align: right;
+            border-bottom: 1px solid var(--gray);
+        }
+        
+        .admin-table th {
+            background-color: var(--light-gray);
+            font-weight: 600;
+        }
+        
+        .action-btn {
+            background-color: var(--turquoise);
+            color: var(--dark-blue);
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-left: 5px;
+            font-size: 14px;
+        }
+        
+        .action-btn.delete {
+            background-color: var(--danger);
+            color: var(--white);
+        }
+        
+        .action-btn.approve {
+            background-color: var(--success);
+            color: white;
+        }
+        
+        .action-btn.whatsapp {
+            background-color: #25D366;
+            color: white;
+        }
+        
+        .admin-actions {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+        
+        .admin-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .stat-card {
+            background-color: var(--white);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 32px;
+            font-weight: bold;
+            color: var(--dark-blue);
+            margin-bottom: 10px;
+        }
+        
+        .stat-label {
+            color: var(--light-blue);
+            font-size: 14px;
+        }
+        
+        .admin-login-form {
+            display: none;
+        }
+        
+        .admin-login-form.active {
+            display: block;
+        }
+        
+        .user-type-toggle {
+            display: flex;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            overflow: hidden;
+            border: 1px solid var(--gray);
+        }
+        
+        .user-type-btn {
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+            background-color: var(--light-gray);
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .user-type-btn.active {
+            background-color: var(--dark-blue);
+            color: var(--white);
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        
+        .badge-success {
+            background-color: var(--success);
+            color: white;
+        }
+        
+        .badge-warning {
+            background-color: var(--warning);
+            color: #212529;
+        }
+        
+        .badge-danger {
+            background-color: var(--danger);
+            color: white;
+        }
+        
+        .badge-pending {
+            background-color: var(--pending);
+            color: #212529;
+        }
+        
+        .badge-approved {
+            background-color: var(--approved);
+            color: white;
+        }
+        
+        .badge-inprogress {
+            background-color: var(--in-progress);
+            color: white;
+        }
+        
+        .currency {
+            color: var(--success);
+            font-weight: bold;
+        }
+        
+        /* ========== الصفحة العامة ========== */
+        .public-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .public-header {
+            background-color: var(--dark-blue);
+            padding: 15px 0;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        .hero-section {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, var(--turquoise) 0%, var(--light-blue) 100%);
+            color: white;
+        }
+        
+        .hero-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+        }
+        
+        .hero-content p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+        
+        .features {
+            padding: 60px 0;
+            background-color: var(--white);
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .feature {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .feature i {
+            font-size: 40px;
+            color: var(--turquoise);
+            margin-bottom: 15px;
+        }
+        
+        /* ========== الرسائل ========== */
+        .message {
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        
+        .message.success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .message.error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        /* ========== محدد الخدمات ========== */
+        .service-selector {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .service-tag {
+            padding: 8px 15px;
+            background-color: var(--light-gray);
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .service-tag.active {
+            background-color: var(--turquoise);
+            color: var(--dark-blue);
+        }
+        
+        /* ========== صفحة حالة الطلبات للمستخدم ========== */
+        .orders-page {
+            padding: 30px 0;
+        }
+        
+        .order-card {
+            background-color: var(--white);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            border-right: 5px solid var(--gray);
+        }
+        
+        .order-card.pending {
+            border-right-color: var(--pending);
+        }
+        
+        .order-card.approved {
+            border-right-color: var(--approved);
+        }
+        
+        .order-card.rejected {
+            border-right-color: var(--rejected);
+        }
+        
+        .order-card.in-progress {
+            border-right-color: var(--in-progress);
+        }
+        
+        .order-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .order-id {
+            font-weight: bold;
+            color: var(--dark-blue);
+            font-size: 18px;
+        }
+        
+        .order-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .detail-item {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .detail-label {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        
+        .detail-value {
+            font-weight: 500;
+        }
+        
+        .order-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+        
+        /* ========== تحسينات جديدة ========== */
+        .remember-me {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .remember-me input {
+            width: auto;
+            margin-left: 8px;
+        }
+        
+        .password-input {
+            padding-right: 40px !important;
+        }
+        
+        .error-message {
+            color: var(--danger);
+            font-size: 14px;
+            margin-top: 5px;
+            display: none;
+        }
+        
+        .success-message {
+            color: var(--success);
+            font-size: 14px;
+            margin-top: 5px;
+            display: none;
+        }
+        
+        .address-example {
+            font-size: 12px;
+            color: #666;
+            margin-top: 5px;
+            margin-right: 5px;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        
+        @media (max-width: 768px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .area-disabled {
+            background-color: var(--light-gray);
+            color: #999;
+            cursor: not-allowed;
+        }
+        
+        /* ========== قائمة الخيارات للمستخدم ========== */
+        .user-menu {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .menu-btn {
+            padding: 10px 15px;
+            background-color: var(--light-blue);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .menu-btn i {
+            font-size: 16px;
+        }
+        
+        /* ========== حالة الطلب ========== */
+        .status-indicator {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        
+        .status-pending {
+            background-color: rgba(255, 193, 7, 0.2);
+            color: var(--warning);
+        }
+        
+        .status-approved {
+            background-color: rgba(40, 167, 69, 0.2);
+            color: var(--success);
+        }
+        
+        .status-rejected {
+            background-color: rgba(220, 53, 69, 0.2);
+            color: var(--danger);
+        }
+        
+        .status-inprogress {
+            background-color: rgba(23, 162, 184, 0.2);
+            color: var(--in-progress);
+        }
+        
+        /* ========== نافذة الموافقة ========== */
+        .approval-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+        }
+        
+        .approval-modal.active {
+            display: flex;
+        }
+        
+        .approval-content {
+            background-color: var(--white);
+            border-radius: 10px;
+            padding: 30px;
+            width: 90%;
+            max-width: 500px;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+        
+        .approval-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .close-modal {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #666;
+        }
+        
+        .approval-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        
+        /* ========== التواصل عبر الواتساب ========== */
+        .whatsapp-btn {
+            background-color: #25D366;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+        }
+        
+        .whatsapp-btn:hover {
+            background-color: #1da851;
+        }
+        
+        /* ========== عرض حالة الطلب ========== */
+        .order-timeline {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: var(--light-gray);
+            border-radius: 8px;
+        }
+        
+        .timeline-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--gray);
+        }
+        
+        .timeline-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .timeline-icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: var(--gray);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 10px;
+            color: white;
+        }
+        
+        .timeline-icon.active {
+            background-color: var(--turquoise);
+        }
+        
+        .timeline-content {
+            flex: 1;
+        }
+        
+        .timeline-time {
+            font-size: 12px;
+            color: #666;
+            margin-top: 3px;
+        }
+    </style>
+</head>
+<body>
+    <!-- الصفحة العامة (للزوار) -->
+    <div id="public-page" class="page active">
+        <header class="public-header">
+            <div class="container">
+                <nav class="public-nav">
+                    <div class="header-logo">
+                        <!-- الشعار من الإنترنت -->
+                        <img src="https://i.ibb.co/WN9k4DmX/Whats-App-Image-2025-11-11-at-5-40-51-PM-1.jpg" 
+                             alt="شعار صيانة بيتك" 
+                             class="header-logo-img"
+                             onerror="this.onerror=null; this.classList.add('logo-fallback'); this.innerHTML='<span>صيانة بيتك</span>';">
+                        <h1 style="color: white; margin: 0;">صيانة بيتك</h1>
+                    </div>
+                    <div class="nav-links">
+                        <a href="#home">الرئيسية</a>
+                        <a href="#services">الخدمات</a>
+                        <a href="#about">من نحن</a>
+                        <a href="#contact">اتصل بنا</a>
+                        <button onclick="showPage('login-page')" class="btn" style="background-color: var(--turquoise); color: var(--dark-blue); border: none; padding: 8px 20px; border-radius: 5px; cursor: pointer;">
+                            تسجيل الدخول
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <!-- الشعار الرئيسي من الإنترنت -->
+                    <img src="https://i.ibb.co/WN9k4DmX/Whats-App-Image-2025-11-11-at-5-40-51-PM-1.jpg" 
+                         alt="شعار صيانة بيتك" 
+                         class="logo-img"
+                         onerror="this.onerror=null; this.classList.add('logo-fallback'); this.innerHTML='<span>صيانة بيتك</span>';"
+                         style="border-radius: 15px;">
+                    <h1>خدمات الصيانة المنزلية المتكاملة</h1>
+                    <p>نقدم أفضل خدمات الصيانة المنزلية بجودة عالية وأسعار مناسبة. فريق فني محترف على مدار الساعة.</p>
+                    <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                        <button onclick="showPage('login-page')" class="btn" style="background-color: white; color: var(--dark-blue); max-width: 200px;">
+                            تسجيل الدخول
+                        </button>
+                        <button onclick="showPage('register-page')" class="btn btn-secondary" style="max-width: 200px;">
+                            إنشاء حساب جديد
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">لماذا تختار صيانة بيتك؟</h2>
+                <div class="features-grid">
+                    <div class="feature">
+                        <i class="fas fa-clock"></i>
+                        <h3>خدمة 24/7</h3>
+                        <p>خدمة متاحة على مدار الساعة طوال أيام الأسبوع</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-award"></i>
+                        <h3>جودة مضمونة</h3>
+                        <p>فنيون مؤهلون معتمدون بخبرة طويلة</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>ضمان على العمل</h3>
+                        <p>ضمان لمدة عام على جميع أعمال الصيانة</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-dollar-sign"></i>
+                        <h3>أسعار تنافسية</h3>
+                        <p>أسعار مناسبة مع خصومات للعملاء الدائمين</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="services-section" style="background-color: var(--light-gray);">
+            <div class="container">
+                <h2 class="section-title">خدماتنا</h2>
+                <div class="service-selector">
+                    <div class="service-tag active" data-service="all">جميع الخدمات</div>
+                    <div class="service-tag" data-service="كهرباء">الكهرباء</div>
+                    <div class="service-tag" data-service="سباكة">السباكة</div>
+                    <div class="service-tag" data-service="تمديدات">التمديدات</div>
+                    <div class="service-tag" data-service="نجارة">النجارة</div>
+                </div>
+                <div class="services-grid">
+                    <!-- سيتم تعبئة الخدمات ديناميكياً -->
+                </div>
+            </div>
+        </section>
+        
+        <footer style="background-color: var(--dark-blue); color: white; padding: 30px 0; text-align: center;">
+            <div class="container">
+                <p>© 2024 صيانة بيتك. جميع الحقوق محفوظة.</p>
+                <p>هاتف: 0555555555 | البريد الإلكتروني: info@domain.com</p>
+                <p>يمكن لأي شخص البحث عن موقعنا وتسجيل الدخول بسهولة</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- صفحة تسجيل الدخول -->
+    <div id="login-page" class="page">
+        <div class="login-page">
+            <div class="login-card">
+                <div class="logo">
+                    <!-- الشعار من الإنترنت -->
+                    <img src="https://i.ibb.co/WN9k4DmX/Whats-App-Image-2025-11-11-at-5-40-51-PM-1.jpg" 
+                         alt="شعار صيانة بيتك" 
+                         class="logo-img"
+                         onerror="this.onerror=null; this.classList.add('logo-fallback'); this.innerHTML='<span>صيانة بيتك</span>';">
+                    <h1>تسجيل الدخول</h1>
+                    <p>أدخل بياناتك للوصول إلى حسابك</p>
+                </div>
+                
+                <div id="login-message" class="message" style="display: none;"></div>
+                
+                <div class="user-type-toggle">
+                    <div class="user-type-btn active" data-type="user">مستخدم</div>
+                    <div class="user-type-btn" data-type="admin">مسؤول</div>
+                </div>
+                
+                <!-- نموذج تسجيل دخول المستخدم -->
+                <form id="login-form" class="user-login-form active">
+                    <div class="form-group">
+                        <label for="phone">رقم الهاتف</label>
+                        <input type="tel" id="phone" placeholder="أدخل رقم الهاتف" required>
+                        <div id="phone-error" class="error-message"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">كلمة السر</label>
+                        <div class="password-container">
+                            <input type="password" id="password" class="password-input" placeholder="أدخل كلمة السر" required>
+                            <button type="button" class="password-toggle" id="togglePassword">
+                                <i class="far fa-eye"></i>
+                            </button>
+                        </div>
+                        <div id="password-error" class="error-message"></div>
+                    </div>
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember-me">
+                        <label for="remember-me">تذكر بياناتي</label>
+                    </div>
+                    <button type="submit" class="btn">دخول</button>
+                    <div id="login-success" class="success-message"></div>
+                </form>
+                
+                <!-- نموذج تسجيل دخول المسؤول -->
+                <form id="admin-login-form" class="admin-login-form">
+                    <div class="form-group">
+                        <label for="admin-email">البريد الإلكتروني</label>
+                        <input type="email" id="admin-email" placeholder="أدخل البريد الإلكتروني" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="admin-password">كلمة السر</label>
+                        <div class="password-container">
+                            <input type="password" id="admin-password" class="password-input" placeholder="أدخل كلمة السر" required>
+                            <button type="button" class="password-toggle" id="toggleAdminPassword">
+                                <i class="far fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-admin">دخول كمسؤول</button>
+                </form>
+                
+                <button onclick="showPage('register-page')" class="btn btn-secondary">مستخدم جديد</button>
+                <button onclick="showPage('public-page')" class="btn" style="background-color: #6c757d; margin-top: 10px;">العودة للرئيسية</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- صفحة إنشاء حساب -->
+    <div id="register-page" class="page">
+        <div class="login-page">
+            <div class="login-card">
+                <div class="logo">
+                    <!-- الشعار من الإنترنت -->
+                    <img src="https://i.ibb.co/WN9k4DmX/Whats-App-Image-2025-11-11-at-5-40-51-PM-1.jpg" 
+                         alt="شعار صيانة بيتك" 
+                         class="logo-img"
+                         onerror="this.onerror=null; this.classList.add('logo-fallback'); this.innerHTML='<span>صيانة بيتك</span>';">
+                    <h1>إنشاء حساب جديد</h1>
+                    <p>انضم إلى صيانة بيتك</p>
+                </div>
+                
+                <div id="register-message" class="message" style="display: none;"></div>
+                
+                <form id="register-form">
+                    <div class="form-group">
+                        <label for="fullname">الاسم الكامل</label>
+                        <input type="text" id="fullname" placeholder="أدخل الاسم الكامل" required>
+                        <div id="fullname-error" class="error-message"></div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="reg-phone">رقم الهاتف</label>
+                            <input type="tel" id="reg-phone" placeholder="أدخل رقم الهاتف" required>
+                            <div id="reg-phone-error" class="error-message"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="province">المحافظة</label>
+                            <select id="province" required>
+                                <option value="">اختر المحافظة</option>
+                                <!-- سيتم تعبئة المحافظات ديناميكياً -->
+                            </select>
+                            <div id="province-error" class="error-message"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="reg-password">كلمة السر</label>
+                            <div class="password-container">
+                                <input type="password" id="reg-password" class="password-input" placeholder="أدخل كلمة السر (6 أحرف على الأقل)" required minlength="6">
+                                <button type="button" class="password-toggle" id="toggleRegPassword">
+                                    <i class="far fa-eye"></i>
+                                </button>
+                            </div>
+                            <div id="reg-password-error" class="error-message"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="confirm-password">تأكيد كلمة السر</label>
+                            <div class="password-container">
+                                <input type="password" id="confirm-password" class="password-input" placeholder="أعد إدخال كلمة السر" required>
+                                <button type="button" class="password-toggle" id="toggleConfirmPassword">
+                                    <i class="far fa-eye"></i>
+                                </button>
+                            </div>
+                            <div id="confirm-password-error" class="error-message"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="area">المنطقة</label>
+                        <select id="area" required disabled>
+                            <option value="">اختر المحافظة أولاً</option>
+                        </select>
+                        <div id="area-error" class="error-message"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="address">العنوان التفصيلي</label>
+                        <input type="text" id="address" placeholder="أدخل العنوان التفصيلي (الشارع، رقم المنزل، الشقة)" required>
+                        <div class="address-example">مثال: شارع الملكة رانيا، مبنى رقم 15، شقة 302</div>
+                        <div id="address-error" class="error-message"></div>
+                    </div>
+                    
+                    <button type="submit" class="btn">إنشاء حساب</button>
+                    <div id="register-success" class="success-message"></div>
+                </form>
+                <button onclick="showPage('login-page')" class="btn btn-secondary">لدي حساب بالفعل</button>
+                <button onclick="showPage('public-page')" class="btn" style="background-color: #6c757d; margin-top: 10px;">العودة للرئيسية</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- الصفحة الرئيسية للمستخدم -->
+    <div id="home-page" class="page">
+        <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="header-logo">
+                        <!-- الشعار من الإنترنت -->
+                        <img src="https://i.ibb.co/WN9k4DmX/Whats-App-Image-2025-11-11-at-5-40-51-PM-1.jpg" 
+                             alt="شعار صيانة بيتك" 
+                             class="header-logo-img"
+                             onerror="this.onerror=null; this.classList.add('logo-fallback'); this.innerHTML='<span>صيانة بيتك</span>';">
+                        <div class="logo">
+                            <h1 style="color: white; margin: 0; font-size: 20px;">مرحباً، <span id="user-name">أحمد</span></h1>
+                        </div>
+                    </div>
+                    <div class="user-info">
+                        <span id="user-phone">رقم الهاتف</span>
+                        <button onclick="logout()" class="logout-btn">تسجيل الخروج</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="services-section">
+            <div class="container">
+                <h2 class="section-title">خدمات الصيانة المنزلية</h2>
+                <p style="text-align: center; margin-bottom: 30px; color: #666;">اختر الخدمة التي تحتاجها وسنقوم بتوصيلك بأفضل الفنيين</p>
+                
+                <div class="user-menu">
+                    <button class="menu-btn" onclick="showPage('home-page')">
+                        <i class="fas fa-home"></i> الخدمات
+                    </button>
+                    <button class="menu-btn" onclick="loadUserOrders()">
+                        <i class="fas fa-clipboard-list"></i> طلباتي
+                    </button>
+                    <button class="menu-btn" onclick="showPage('user-orders-page')">
+                        <i class="fas fa-history"></i> حالة الطلبات
+                    </button>
+                </div>
+                
+                <div class="services-grid" id="user-services-grid">
+                    <!-- سيتم تعبئة الخدمات ديناميكياً -->
+                </div>
+            </div>
+        </section>
+        
+        <section style="padding: 40px 0; background-color: var(--white);">
+            <div class="container">
+                <h2 class="section-title">طلباتك الأخيرة</h2>
+                <div id="user-orders" style="text-align: center; color: #666;">
+                    <p>لا توجد طلبات سابقة</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- صفحة الخدمة -->
+    <div id="service-page" class="page">
+        <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="header-logo">
+                        <!-- الشعار من الإنترنت -->
+                        <img src="https://i.ibb.co/WN9k4DmX/Whats-App-Image-2025-11-11-at-5-40-51-PM-1.jpg" 
+                             alt="شعار صيانة بيتك" 
+                             class="header-logo-img"
+                             onerror="this.onerror=null; this.classList.add('logo-fallback'); this.innerHTML='<span>صيانة بيتك</span>';">
+                        <div class="logo">
+                            <h1 style="color: white; margin: 0; font-size: 20px;">طلب خدمة</h1>
+                        </div>
+                    </div>
+                    <div class="user-info">
+                        <span id="service-user-name">المستخدم</span>
+                        <button onclick="logout()" class="logout-btn">تسجيل الخروج</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="service-page">
+            <div class="container">
+                <button onclick="showPage('home-page')" class="back-btn">
+                    <i class="fas fa-arrow-right"></i> العودة للرئيسية
+                </button>
+                <h2 class="page-title" id="service-title">
+                    <i class="fas fa-bolt"></i> صيانة الكهرباء
+                </h2>
+                
+                <div class="service-content">
+                    <div class="workers-section">
+                        <h3 class="section-subtitle">الفنيون المتاحون</h3>
+                        <div id="workers-list">
+                            <!-- سيتم تعبئة العمال ديناميكياً -->
+                        </div>
+                    </div>
+                    
+                    <div class="request-form-section">
+                        <h3 class="section-subtitle">تقديم طلب الصيانة</h3>
+                        <form id="maintenance-request" class="request-form">
+                            <div class="form-group">
+                                <label for="client-name">اسم العميل</label>
+                                <input type="text" id="client-name" value="" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label for="client-phone">رقم الهاتف</label>
+                                <input type="tel" id="client-phone" value="" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label for="client-province">المحافظة</label>
+                                <select id="client-province" required>
+                                    <option value="">اختر المحافظة</option>
+                                </select>
+                                <div id="province-error" class="error-message"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="client-area">المنطقة</label>
+                                <select id="client-area" required disabled>
+                                    <option value="">اختر المحافظة أولاً</option>
+                                </select>
+                                <div id="area-error" class="error-message"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="client-address">العنوان التفصيلي</label>
+                                <input type="text" id="client-address" placeholder="أدخل العنوان التفصيلي (الشارع، رقم المنزل، الشقة)" required>
+                                <div class="address-example">مثال: شارع الملكة رانيا، مبنى رقم 15، شقة 302</div>
+                                <div id="address-error" class="error-message"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="problem-type">نوع المشكلة</label>
+                                <input type="text" id="problem-type" placeholder="وصف المشكلة" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="visit-time">وقت الزيارة المطلوب</label>
+                                <input type="datetime-local" id="visit-time" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="notes">ملاحظات إضافية</label>
+                                <textarea id="notes" placeholder="ملاحظات إضافية (اختياري)"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="selected-worker">الفني المختار</label>
+                                <select id="selected-worker" required>
+                                    <option value="">اختر فني</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn">إرسال الطلب</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- صفحة حالة الطلبات للمستخدم -->
+    <div id="user-orders-page" class="page">
+        <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="header-logo">
+                        <!-- الشعار من الإنترنت -->
+                        <img src="https://i.ibb.co/WN9k4DmX/Whats-App-Image-2025-11-11-at-5-40-51-PM-1.jpg" 
+                             alt="شعار صيانة بيتك" 
+                             class="header-logo-img"
+                             onerror="this.onerror=null; this.classList.add('logo-fallback'); this.innerHTML='<span>صيانة بيتك</span>';">
+                        <div class="logo">
+                            <h1 style="color: white; margin: 0; font-size: 20px;">طلباتي</h1>
+                        </div>
+                    </div>
+                    <div class="user-info">
+                        <span id="orders-user-name">المستخدم</span>
+                        <button onclick="logout()" class="logout-btn">تسجيل الخروج</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="orders-page">
+            <div class="container">
+                <button onclick="showPage('home-page')" class="back-btn">
+                    <i class="fas fa-arrow-right"></i> العودة للرئيسية
+                </button>
+                <h2 class="page-title">
+                    <i class="fas fa-clipboard-list"></i> حالة طلباتي
+                </h2>
+                
+                <div id="user-orders-list">
+                    <!-- سيتم تعبئة الطلبات ديناميكياً -->
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- لوحة الإدارة -->
+    <div id="admin-page" class="page">
+        <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="header-logo">
+                        <!-- الشعار من الإنترنت -->
+                        <img src="https://i.ibb.co/WN9k4DmX/Whats-App-Image-2025-11-11-at-5-40-51-PM-1.jpg" 
+                             alt="شعار صيانة بيتك" 
+                             class="header-logo-img"
+                             onerror="this.onerror=null; this.classList.add('logo-fallback'); this.innerHTML='<span>صيانة بيتك</span>';">
+                        <div class="logo">
+                            <h1 style="color: white; margin: 0; font-size: 20px;">لوحة الإدارة</h1>
+                        </div>
+                    </div>
+                    <div class="user-info">
+                        <span id="admin-name">المسؤول</span>
+                        <button onclick="logout()" class="logout-btn">تسجيل الخروج</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="admin-panel">
+            <div class="container">
+                <div class="admin-stats">
+                    <div class="stat-card">
+                        <div class="stat-value" id="total-users">0</div>
+                        <div class="stat-label">المستخدمين</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="total-orders">0</div>
+                        <div class="stat-label">الطلبات</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="total-workers">0</div>
+                        <div class="stat-label">فني نشط</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="pending-orders">0</div>
+                        <div class="stat-label">طلبات جديدة</div>
+                    </div>
+                </div>
+                
+                <div class="admin-tabs">
+                    <div class="admin-tab active" data-tab="users">المستخدمين</div>
+                    <div class="admin-tab" data-tab="workers">إدارة العمال</div>
+                    <div class="admin-tab" data-tab="orders">الطلبات</div>
+                    <div class="admin-tab" data-tab="services">الخدمات</div>
+                </div>
+                
+                <div class="admin-content">
+                    <!-- المحتوى سيتم تعبئته ديناميكياً -->
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- نافذة الموافقة على الطلبات -->
+    <div id="approval-modal" class="approval-modal">
+        <div class="approval-content">
+            <div class="approval-header">
+                <h2>معالجة الطلب</h2>
+                <button class="close-modal" onclick="closeApprovalModal()">&times;</button>
+            </div>
+            <div id="approval-order-details">
+                <!-- سيتم تعبئة تفاصيل الطلب هنا -->
+            </div>
+            <div class="approval-actions">
+                <button class="btn" onclick="approveOrder()">موافقة</button>
+                <button class="btn btn-secondary" onclick="rejectOrder()">رفض</button>
+                <button class="btn whatsapp-btn" onclick="contactViaWhatsApp()">
+                    <i class="fab fa-whatsapp"></i> التواصل عبر واتساب
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- الإشعار -->
+    <div id="notification" class="notification">
+        رسالة الإشعار
+    </div>
+
+    <script>
+        // ==================== إعدادات التواصل ====================
+        const ADMIN_WHATSAPP_NUMBER = "0780106684"; // رقم واتساب المسؤول
+        const WHATSAPP_MESSAGE_TEMPLATE = "مرحباً، أود التواصل معك بخصوص الطلب رقم: ";
+
+        // ==================== نظام تأمين الشعار من الإنترنت ====================
+        document.addEventListener('DOMContentLoaded', function() {
+            // رابط الصورة من الإنترنت
+            const LOGO_URL = "https://i.ibb.co/WN9k4DmX/Whats-App-Image-2025-11-11-at-5-40-51-PM-1.jpg";
+            
+            // ضبط جميع الشعارات لاستخدام الرابط
+            const logos = document.querySelectorAll('img[alt*="شعار"]');
+            
+            logos.forEach(logo => {
+                // تعيين الرابط الصحيح
+                if (!logo.src.includes('i.ibb.co')) {
+                    logo.src = LOGO_URL;
+                }
+                
+                // معالج أخطاء مضمون
+                logo.onerror = function() {
+                    this.onerror = null;
+                    if (!this.classList.contains('logo-fallback')) {
+                        this.classList.add('logo-fallback');
+                        this.innerHTML = '<span>صيانة بيتك</span>';
+                        this.style.display = 'flex';
+                        this.style.alignItems = 'center';
+                        this.style.justifyContent = 'center';
+                        this.style.color = 'white';
+                        this.style.fontWeight = 'bold';
+                        this.style.fontSize = this.classList.contains('header-logo-img') ? '12px' : '20px';
+                        this.style.background = 'linear-gradient(135deg, #003366, #1E90FF)';
+                        this.style.border = '2px solid #40E0D0';
+                    }
+                };
+                
+                // تحقق من تحميل الصورة
+                const testImage = new Image();
+                testImage.onload = function() {
+                    console.log('✅ الشعار محمل بنجاح من الإنترنت');
+                };
+                testImage.onerror = function() {
+                    console.log('⚠️  فشل تحميل الشعار من الإنترنت، سيتم استخدام البديل');
+                    logo.onerror();
+                };
+                testImage.src = LOGO_URL;
+            });
+            
+            // تحقق بعد 3 ثوانٍ
+            setTimeout(() => {
+                logos.forEach(logo => {
+                    if (!logo.complete || logo.naturalHeight === 0) {
+                        logo.onerror();
+                    }
+                });
+            }, 3000);
+            
+            // تحميل بقية التطبيق
+            initializeLoginSystem();
+            loadData();
+            loadPublicServices();
+            setupEventListeners();
+            loadJordanProvinces();
+            loadRememberedLogin();
+            setupPasswordToggles();
+            setupProvinceAreaLogic();
+            setupServicePageProvinceLogic();
+        });
+
+        // ==================== نظام تسجيل الدخول المحسن ====================
+        function initializeLoginSystem() {
+            // بيانات تسجيل الدخول الافتراضية المخزنة مسبقاً
+            const DEFAULT_LOGINS = {
+                users: [
+                    {
+                        id: 1,
+                        fullname: "أحمد محمد",
+                        phone: "0551234567",
+                        password: "123456",
+                        province: "عمّان",
+                        area: "قصبة عمّان",
+                        address: "شارع الملكة رانيا، مبنى رقم 15، شقة 302",
+                        userType: "user",
+                        createdAt: new Date().toISOString()
+                    },
+                    {
+                        id: 2,
+                        fullname: "سارة خالد",
+                        phone: "0771234567",
+                        password: "123456",
+                        province: "عمان",
+                        area: "دابوق",
+                        address: "شارع المدينة المنورة، مبنى رقم 10، شقة 201",
+                        userType: "user",
+                        createdAt: new Date().toISOString()
+                    }
+                ],
+                admins: [
+                    {
+                        id: 100,
+                        fullname: "المسؤول الرئيسي",
+                        email: "aljmlmsb4@gmail.com",
+                        password: "admin123",
+                        userType: "admin",
+                        whatsapp: "0780106684",
+                        createdAt: new Date().toISOString()
+                    }
+                ]
+            };
+
+            // التحقق من وجود بيانات مخزنة مسبقاً
+            if (!localStorage.getItem('usersDatabase')) {
+                // إنشاء قاعدة بيانات أولية
+                const initialDatabase = {
+                    users: DEFAULT_LOGINS.users,
+                    admins: DEFAULT_LOGINS.admins,
+                    orders: [],
+                    workers: []
+                };
+                localStorage.setItem('usersDatabase', JSON.stringify(initialDatabase));
+                console.log('✅ تم إنشاء قاعدة بيانات أولية');
+            }
+
+            // تحميل بيانات المستخدم المخزنة محلياً
+            const savedUser = localStorage.getItem('currentUser');
+            if (savedUser) {
+                try {
+                    const user = JSON.parse(savedUser);
+                    currentUser = user;
+                    
+                    // التحقق من صلاحية المستخدم في قاعدة البيانات
+                    const db = JSON.parse(localStorage.getItem('usersDatabase'));
+                    let userExists = false;
+                    
+                    if (user.userType === 'admin') {
+                        userExists = db.admins.some(admin => admin.id === user.id);
+                        if (userExists) {
+                            showPage('admin-page');
+                            loadAdminStats();
+                            loadAdminTab('orders');
+                            showNotification('مرحباً مرة أخرى ' + user.fullname, 'success');
+                        }
+                    } else {
+                        userExists = db.users.some(u => u.id === user.id);
+                        if (userExists) {
+                            showPage('home-page');
+                            updateUserInfo();
+                            loadUserServices();
+                            showNotification('مرحباً مرة أخرى ' + user.fullname, 'success');
+                        }
+                    }
+                    
+                    if (!userExists) {
+                        localStorage.removeItem('currentUser');
+                        currentUser = null;
+                        showPage('public-page');
+                    }
+                } catch (e) {
+                    console.error('❌ خطأ في تحليل بيانات المستخدم المخزنة');
+                    localStorage.removeItem('currentUser');
+                    currentUser = null;
+                }
+            }
+        }
+
+        // ==================== محافظات الأردن والمناطق ====================
+        const jordanProvincesWithAreas = {
+            "عمّان": [
+                "قصبة عمّان", "الجامعة", "وادي السير", "الجيزة", "ماركا", "سحاب", "ناعور", 
+                "القويسمة", "عبدون", "جبل الحسين", "جبل اللويبدة", "تلاع العلي", "الجبيهة", 
+                "صويلح", "خلدا", "الرابية", "أبو نصير", "مرج الحمام", "بدر الجديدة", 
+                "أم أذينة", "المقابلين", "الهاشمي", "جبل النصر"
+            ],
+            "الزرقاء": [
+                "قصبة الزرقاء", "الرصيفة", "الهاشمية", "الأزرق", "الزرقاء الجديدة", 
+                "حي معصوم", "حي رمزي", "الغويرية", "بيرين", "الظليل", "الأزرق الشمالي", 
+                "الأزرق الجنوبي"
+            ],
+            "إربد": [
+                "قصبة إربد", "بني كنانة", "الكورة", "بني عبيد", "المزار الشمالي", 
+                "الطيبة", "الأغوار الشمالية", "الحصن", "حوارة", "سال", "كفرسوم", 
+                "جديتا", "دير أبي سعيد", "سحم", "كفريوبا", "عجلون", "عنبة"
+            ],
+            "المفرق": [
+                "قصبة المفرق", "البادية الشمالية الغربية", "البادية الشمالية الشرقية", 
+                "البادية الشمالية", "رحاب", "الخالدية", "أم الجمال", "منشية بني حسن", 
+                "سما السرحان", "دير الكهف"
+            ],
+            "البلقاء": [
+                "قصبة السلط", "دير علا", "الشونة الجنوبية", "عين الباشا", "الفحيص", 
+                "ماحص", "العارضة", "الكرامة", "أبو نصير البلقاء"
+            ],
+            "الكرك": [
+                "قصبة الكرك", "المزار الجنوبي", "الأغوار الجنوبية", "القطرانة", 
+                "فقوع", "مؤاب", "الثنية", "المرج", "العدنانية"
+            ],
+            "الطفيلة": [
+                "قصبة الطفيلة", "بصيرا", "الحسا", "عيمة", "القادسية", "أبو بنا", "الرشادية"
+            ],
+            "معان": [
+                "قصبة معان", "الشوبك", "البتراء", "الحسينية", "الجفر", "أيل", 
+                "راكين", "وادي موسى", "الطيبة"
+            ],
+            "العقبة": [
+                "قصبة العقبة", "القويرة", "الديسة", "وادي عربة"
+            ],
+            "جرش": [
+                "قصبة جرش", "برما", "المعراض", "ساكب", "سوف", "ريمون"
+            ],
+            "عجلون": [
+                "قصبة عجلون", "كفرنجة", "عنجرة", "راجب", "عين جنا"
+            ],
+            "مادبا": [
+                "قصبة مادبا", "ذيبان", "مليح", "ماعين", "الفيصلية", "جبل بني حميدة"
+            ]
+        };
+
+        function loadJordanProvinces() {
+            // تحميل المحافظات في صفحة التسجيل
+            const provinceSelect = document.getElementById('province');
+            if (provinceSelect) {
+                provinceSelect.innerHTML = '<option value="">اختر المحافظة</option>';
+                
+                const provinces = Object.keys(jordanProvincesWithAreas).sort();
+                provinces.forEach(province => {
+                    const option = document.createElement('option');
+                    option.value = province;
+                    option.textContent = province;
+                    provinceSelect.appendChild(option);
+                });
+            }
+            
+            // تحميل المحافظات في صفحة الخدمة
+            const clientProvinceSelect = document.getElementById('client-province');
+            if (clientProvinceSelect) {
+                clientProvinceSelect.innerHTML = '<option value="">اختر المحافظة</option>';
+                
+                const provinces = Object.keys(jordanProvincesWithAreas).sort();
+                provinces.forEach(province => {
+                    const option = document.createElement('option');
+                    option.value = province;
+                    option.textContent = province;
+                    clientProvinceSelect.appendChild(option);
+                });
+            }
+        }
+
+        function setupProvinceAreaLogic() {
+            // منطق صفحة التسجيل
+            const provinceSelect = document.getElementById('province');
+            const areaSelect = document.getElementById('area');
+            
+            if (provinceSelect && areaSelect) {
+                provinceSelect.addEventListener('change', function() {
+                    const selectedProvince = this.value;
+                    updateAreaOptions(selectedProvince, areaSelect);
+                });
+            }
+            
+            // منطق صفحة الخدمة
+            const clientProvinceSelect = document.getElementById('client-province');
+            const clientAreaSelect = document.getElementById('client-area');
+            
+            if (clientProvinceSelect && clientAreaSelect) {
+                clientProvinceSelect.addEventListener('change', function() {
+                    const selectedProvince = this.value;
+                    updateAreaOptions(selectedProvince, clientAreaSelect);
+                });
+            }
+        }
+
+        function setupServicePageProvinceLogic() {
+            const clientProvinceSelect = document.getElementById('client-province');
+            const clientAreaSelect = document.getElementById('client-area');
+            
+            if (!clientProvinceSelect || !clientAreaSelect) return;
+            
+            // تعطيل المنطقة حتى اختيار المحافظة
+            clientAreaSelect.disabled = true;
+            clientAreaSelect.classList.add('area-disabled');
+            
+            // عند تغيير المحافظة
+            clientProvinceSelect.addEventListener('change', function() {
+                const selectedProvince = this.value;
+                
+                if (selectedProvince) {
+                    // تفعيل قائمة المناطق
+                    clientAreaSelect.disabled = false;
+                    clientAreaSelect.classList.remove('area-disabled');
+                    
+                    // تحديث قائمة المناطق
+                    updateAreaOptions(selectedProvince, clientAreaSelect);
+                    
+                    // تلقائياً اختيار أول منطقة
+                    setTimeout(() => {
+                        if (clientAreaSelect.options.length > 1) {
+                            clientAreaSelect.selectedIndex = 1;
+                        }
+                    }, 100);
+                } else {
+                    // إعادة تعطيل المنطقة
+                    clientAreaSelect.disabled = true;
+                    clientAreaSelect.classList.add('area-disabled');
+                    clientAreaSelect.innerHTML = '<option value="">اختر المحافظة أولاً</option>';
+                }
+            });
+        }
+
+        function updateAreaOptions(province, areaSelectElement) {
+            if (!province) {
+                areaSelectElement.innerHTML = '<option value="">اختر المحافظة أولاً</option>';
+                areaSelectElement.disabled = true;
+                if (areaSelectElement.id === 'area' || areaSelectElement.id === 'client-area') {
+                    areaSelectElement.classList.add('area-disabled');
+                }
+                return;
+            }
+            
+            // تفعيل قائمة المناطق
+            areaSelectElement.disabled = false;
+            if (areaSelectElement.id === 'area' || areaSelectElement.id === 'client-area') {
+                areaSelectElement.classList.remove('area-disabled');
+            }
+            
+            // الحصول على مناطق المحافظة المختارة
+            const areas = jordanProvincesWithAreas[province] || [];
+            
+            // تحديث قائمة المناطق
+            areaSelectElement.innerHTML = '<option value="">اختر المنطقة</option>';
+            
+            areas.sort().forEach(area => {
+                const option = document.createElement('option');
+                option.value = area;
+                option.textContent = area;
+                areaSelectElement.appendChild(option);
+            });
+        }
+
+        // ==================== إظهار/إخفاء كلمة المرور ====================
+        function setupPasswordToggles() {
+            // للمستخدم العادي
+            const togglePassword = document.getElementById('togglePassword');
+            if (togglePassword) {
+                togglePassword.addEventListener('click', function() {
+                    const passwordInput = document.getElementById('password');
+                    togglePasswordVisibility(passwordInput, this);
+                });
+            }
+            
+            // للمسؤول
+            const toggleAdminPassword = document.getElementById('toggleAdminPassword');
+            if (toggleAdminPassword) {
+                toggleAdminPassword.addEventListener('click', function() {
+                    const passwordInput = document.getElementById('admin-password');
+                    togglePasswordVisibility(passwordInput, this);
+                });
+            }
+            
+            // للتسجيل
+            const toggleRegPassword = document.getElementById('toggleRegPassword');
+            if (toggleRegPassword) {
+                toggleRegPassword.addEventListener('click', function() {
+                    const passwordInput = document.getElementById('reg-password');
+                    togglePasswordVisibility(passwordInput, this);
+                });
+            }
+            
+            const toggleConfirmPassword = document.getElementById('toggleConfirmPassword');
+            if (toggleConfirmPassword) {
+                toggleConfirmPassword.addEventListener('click', function() {
+                    const passwordInput = document.getElementById('confirm-password');
+                    togglePasswordVisibility(passwordInput, this);
+                });
+            }
+        }
+
+        function togglePasswordVisibility(passwordInput, toggleButton) {
+            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', type);
+            
+            // تغيير الأيقونة
+            const icon = toggleButton.querySelector('i');
+            if (type === 'password') {
+                icon.classList.remove('fa-eye-slash');
+                icon.classList.add('fa-eye');
+            } else {
+                icon.classList.remove('fa-eye');
+                icon.classList.add('fa-eye-slash');
+            }
+        }
+
+        // ==================== تذكر بيانات تسجيل الدخول المحسن ====================
+        function loadRememberedLogin() {
+            const rememberedLogin = localStorage.getItem('rememberedLogin');
+            if (rememberedLogin) {
+                try {
+                    const loginData = JSON.parse(rememberedLogin);
+                    
+                    // تعبئة رقم الهاتف في حقل تسجيل الدخول
+                    if (loginData.phone) {
+                        document.getElementById('phone').value = loginData.phone;
+                        document.getElementById('remember-me').checked = true;
+                        
+                        // إذا كان هناك مستخدم مسجل بالفعل، تعبئة كلمة المرور أيضاً
+                        if (loginData.password) {
+                            document.getElementById('password').value = loginData.password;
+                            showMessage('login-success', `مرحباً مرة أخرى! بياناتك جاهزة.`, 'success');
+                        } else {
+                            showMessage('login-success', `مرحباً مرة أخرى! يمكنك إدخال كلمة المرور للدخول.`, 'success');
+                        }
+                    }
+                } catch (e) {
+                    console.log('❌ خطأ في تحليل بيانات تسجيل الدخول المحفوظة');
+                }
+            }
+            
+            // أيضًا تحميل آخر تسجيل دخول للمسؤول
+            const rememberedAdmin = localStorage.getItem('rememberedAdmin');
+            if (rememberedAdmin) {
+                try {
+                    const adminData = JSON.parse(rememberedAdmin);
+                    if (adminData.email) {
+                        // إذا كانت صفحة تسجيل دخول المسؤول مفتوحة
+                        const adminEmailInput = document.getElementById('admin-email');
+                        if (adminEmailInput) {
+                            adminEmailInput.value = adminData.email;
+                        }
+                    }
+                } catch (e) {
+                    console.log('❌ خطأ في تحليل بيانات المسؤول المحفوظة');
+                }
+            }
+        }
+
+        function saveRememberedLogin(phone, password = null) {
+            const rememberMe = document.getElementById('remember-me').checked;
+            
+            if (rememberMe) {
+                const loginData = { 
+                    phone: phone,
+                    timestamp: new Date().toISOString()
+                };
+                
+                // حفظ كلمة المرور فقط إذا كانت موجودة
+                if (password) {
+                    loginData.password = password;
+                }
+                
+                localStorage.setItem('rememberedLogin', JSON.stringify(loginData));
+            } else {
+                localStorage.removeItem('rememberedLogin');
+            }
+        }
+
+        function saveRememberedAdmin(email) {
+            const adminData = { 
+                email: email,
+                timestamp: new Date().toISOString()
+            };
+            localStorage.setItem('rememberedAdmin', JSON.stringify(adminData));
+        }
+
+        // ==================== عرض وإخفاء الرسائل ====================
+        function showMessage(elementId, message, type = 'error') {
+            const element = document.getElementById(elementId);
+            if (!element) return;
+            
+            element.textContent = message;
+            element.style.display = 'block';
+            element.className = type === 'error' ? 'error-message' : 'success-message';
+            
+            // إخفاء الرسالة بعد 5 ثواني
+            if (type === 'success') {
+                setTimeout(() => {
+                    element.style.display = 'none';
+                }, 5000);
+            }
+        }
+
+        function hideMessage(elementId) {
+            const element = document.getElementById(elementId);
+            if (element) {
+                element.style.display = 'none';
+            }
+        }
+
+        // ==================== بيانات النظام ====================
+        // المستخدم الحالي
+        let currentUser = null;
+        let currentService = null;
+        let currentOrderForApproval = null;
+
+        // بيانات الخدمات
+        const servicesData = [
+            {
+                id: 1,
+                name: "كهرباء",
+                title: "صيانة الكهرباء",
+                description: "إصلاح الأعطال الكهربائية والتركيبات",
+                icon: "bolt",
+                price: "15 دينار",
+                color: "#FF6B6B"
+            },
+            {
+                id: 2,
+                name: "سباكة",
+                title: "السباكة",
+                description: "إصلاح تسربات المياه وتركيب الأدوات الصحية",
+                icon: "faucet",
+                price: "20 دينار",
+                color: "#4ECDC4"
+            },
+            {
+                id: 3,
+                name: "تمديدات",
+                title: "التمديدات",
+                description: "تمديدات المياه والكهرباء والغاز",
+                icon: "tools",
+                price: "25 دينار",
+                color: "#45B7D1"
+            },
+            {
+                id: 4,
+                name: "نجارة",
+                title: "النجارة",
+                description: "إصلاح الأثاث والأبواب والنوافذ",
+                icon: "hammer",
+                price: "18 دينار",
+                color: "#96CEB4"
+            }
+        ];
+
+        // حالات الطلبات
+        const ORDER_STATUS = {
+            PENDING: 'pending',
+            APPROVED: 'approved',
+            REJECTED: 'rejected',
+            IN_PROGRESS: 'in_progress',
+            COMPLETED: 'completed'
+        };
+
+        const ORDER_STATUS_TEXT = {
+            pending: 'قيد الانتظار',
+            approved: 'مقبول',
+            rejected: 'مرفوض',
+            in_progress: 'قيد التنفيذ',
+            completed: 'مكتمل'
+        };
+
+        // ==================== دوال مساعدة ====================
+        function getDatabase() {
+            const db = localStorage.getItem('usersDatabase');
+            return db ? JSON.parse(db) : { users: [], admins: [], orders: [], workers: [] };
+        }
+
+        function saveDatabase(db) {
+            localStorage.setItem('usersDatabase', JSON.stringify(db));
+        }
+
+        function saveCurrentUser() {
+            if (currentUser) {
+                localStorage.setItem('currentUser', JSON.stringify(currentUser));
+            }
+        }
+
+        function loadData() {
+            // يتم تحميل البيانات الآن في initializeLoginSystem
+        }
+
+        function showPage(pageId) {
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+            document.getElementById(pageId).classList.add('active');
+            
+            // إخفاء جميع رسائل الخطأ
+            document.querySelectorAll('.error-message, .success-message').forEach(msg => {
+                msg.style.display = 'none';
+            });
+            
+            if (pageId === 'admin-page' && currentUser?.userType === 'admin') {
+                loadAdminStats();
+                loadAdminTab('orders');
+            }
+            
+            if (pageId === 'home-page' && currentUser?.userType === 'user') {
+                updateUserInfo();
+                loadUserServices();
+                loadUserOrders();
+            }
+            
+            if (pageId === 'user-orders-page' && currentUser?.userType === 'user') {
+                loadUserOrdersList();
+            }
+            
+            if (pageId === 'login-page') {
+                // تحميل بيانات التذكر إذا كانت موجودة
+                loadRememberedLogin();
+            }
+            
+            if (pageId === 'register-page') {
+                // إعادة تعيين حقول العنوان
+                document.getElementById('province').selectedIndex = 0;
+                updateAreaOptions('', document.getElementById('area'));
+                document.getElementById('address').value = '';
+            }
+            
+            if (pageId === 'service-page') {
+                // إعادة تعيين حقول العنوان في صفحة الخدمة
+                const clientProvinceSelect = document.getElementById('client-province');
+                const clientAreaSelect = document.getElementById('client-area');
+                const clientAddressInput = document.getElementById('client-address');
+                
+                if (clientProvinceSelect) clientProvinceSelect.selectedIndex = 0;
+                if (clientAreaSelect) {
+                    clientAreaSelect.innerHTML = '<option value="">اختر المحافظة أولاً</option>';
+                    clientAreaSelect.disabled = true;
+                    clientAreaSelect.classList.add('area-disabled');
+                }
+                if (clientAddressInput) clientAddressInput.value = '';
+                
+                // تعبئة بيانات المستخدم في الحقول
+                fillUserDataInServiceForm();
+            }
+        }
+
+        function fillUserDataInServiceForm() {
+            if (!currentUser) return;
+            
+            const db = getDatabase();
+            // جلب بيانات المستخدم الكاملة
+            const fullUserData = db.users.find(u => u.id === currentUser.id);
+            
+            // تعبئة الحقول الثابتة
+            document.getElementById('client-name').value = fullUserData?.fullname || currentUser.fullname || '';
+            document.getElementById('client-phone').value = fullUserData?.phone || currentUser.phone || '';
+            
+            // تعبئة المحافظة إذا كانت موجودة
+            const clientProvinceSelect = document.getElementById('client-province');
+            if (clientProvinceSelect && (fullUserData?.province || currentUser?.province)) {
+                const province = fullUserData?.province || currentUser.province;
+                for (let i = 0; i < clientProvinceSelect.options.length; i++) {
+                    if (clientProvinceSelect.options[i].value === province) {
+                        clientProvinceSelect.selectedIndex = i;
+                        
+                        // تحديث المناطق بعد اختيار المحافظة
+                        setTimeout(() => {
+                            updateAreaOptions(province, document.getElementById('client-area'));
+                            
+                            // تعبئة المنطقة إذا كانت موجودة
+                            const clientAreaSelect = document.getElementById('client-area');
+                            if (clientAreaSelect && (fullUserData?.area || currentUser?.area)) {
+                                const area = fullUserData?.area || currentUser.area;
+                                for (let j = 0; j < clientAreaSelect.options.length; j++) {
+                                    if (clientAreaSelect.options[j].value === area) {
+                                        clientAreaSelect.selectedIndex = j;
+                                        break;
+                                    }
+                                }
+                            }
+                        }, 100);
+                        break;
+                    }
+                }
+            }
+            
+            // تعبئة العنوان إذا كان موجوداً
+            const clientAddressInput = document.getElementById('client-address');
+            if (clientAddressInput && (fullUserData?.address || currentUser?.address)) {
+                clientAddressInput.value = fullUserData?.address || currentUser.address;
+            }
+        }
+
+        function showNotification(message, type = 'success', duration = 5000) {
+            const notification = document.getElementById('notification');
+            notification.textContent = message;
+            notification.className = `notification ${type}`;
+            notification.style.display = 'block';
+            
+            setTimeout(() => {
+                notification.style.display = 'none';
+            }, duration);
+        }
+
+        function getStatusBadge(status) {
+            const badges = {
+                'pending': 'badge-pending',
+                'approved': 'badge-approved',
+                'rejected': 'badge-danger',
+                'in_progress': 'badge-inprogress',
+                'completed': 'badge-success'
+            };
+            
+            return `<span class="badge ${badges[status] || 'badge-warning'}">${ORDER_STATUS_TEXT[status] || status}</span>`;
+        }
+
+        function getStatusClass(status) {
+            const classes = {
+                'pending': 'pending',
+                'approved': 'approved',
+                'rejected': 'rejected',
+                'in_progress': 'in-progress',
+                'completed': 'approved'
+            };
+            
+            return classes[status] || 'pending';
+        }
+
+        // ==================== نظام المصادقة المحسن ====================
+        document.getElementById('login-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const phone = document.getElementById('phone').value.trim();
+            const password = document.getElementById('password').value;
+            const rememberMe = document.getElementById('remember-me').checked;
+            
+            // إخفاء رسائل الخطأ السابقة
+            hideMessage('phone-error');
+            hideMessage('password-error');
+            hideMessage('login-success');
+            
+            // التحقق من رقم الهاتف
+            if (!phone) {
+                showMessage('phone-error', 'يرجى إدخال رقم الهاتف', 'error');
+                return;
+            }
+            
+            if (!/^[0-9]{10}$/.test(phone)) {
+                showMessage('phone-error', 'رقم الهاتف يجب أن يتكون من 10 أرقام', 'error');
+                return;
+            }
+            
+            // التحقق من كلمة المرور
+            if (!password) {
+                showMessage('password-error', 'يرجى إدخال كلمة المرور', 'error');
+                return;
+            }
+            
+            // البحث عن المستخدم في قاعدة البيانات
+            const db = getDatabase();
+            const user = db.users.find(u => u.phone === phone && u.password === password);
+            
+            if (user) {
+                // حفظ بيانات تسجيل الدخول إذا طلب المستخدم ذلك
+                if (rememberMe) {
+                    saveRememberedLogin(phone, password);
+                } else {
+                    localStorage.removeItem('rememberedLogin');
+                }
+                
+                // حفظ بيانات المستخدم الحالي
+                currentUser = {
+                    id: user.id,
+                    fullname: user.fullname,
+                    phone: user.phone,
+                    province: user.province,
+                    area: user.area,
+                    address: user.address,
+                    userType: 'user'
+                };
+                
+                saveCurrentUser();
+                showNotification('تم تسجيل الدخول بنجاح!', 'success');
+                showPage('home-page');
+                updateUserInfo();
+                loadUserServices();
+            } else {
+                showMessage('password-error', 'رقم الهاتف أو كلمة المرور غير صحيحة', 'error');
+                showNotification('بيانات الدخول غير صحيحة', 'error');
+            }
+        });
+
+        document.getElementById('admin-login-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const email = document.getElementById('admin-email').value;
+            const password = document.getElementById('admin-password').value;
+            
+            const db = getDatabase();
+            const admin = db.admins.find(a => a.email === email && a.password === password);
+            
+            if (admin) {
+                currentUser = {
+                    id: admin.id,
+                    fullname: admin.fullname,
+                    email: admin.email,
+                    userType: 'admin'
+                };
+                
+                // حفظ بيانات تسجيل دخول المسؤول
+                saveRememberedAdmin(email);
+                saveCurrentUser();
+                
+                showNotification('تم تسجيل الدخول كمسؤول بنجاح!', 'success');
+                showPage('admin-page');
+                loadAdminStats();
+                loadAdminTab('orders');
+            } else {
+                showNotification('بيانات الدخول غير صحيحة', 'error');
+            }
+        });
+
+        document.getElementById('register-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // إخفاء جميع رسائل الخطأ
+            document.querySelectorAll('.error-message').forEach(msg => {
+                msg.style.display = 'none';
+            });
+            hideMessage('register-success');
+            
+            const fullname = document.getElementById('fullname').value.trim();
+            const phone = document.getElementById('reg-phone').value.trim();
+            const password = document.getElementById('reg-password').value;
+            const confirmPassword = document.getElementById('confirm-password').value;
+            const province = document.getElementById('province').value;
+            const area = document.getElementById('area').value;
+            const address = document.getElementById('address').value.trim();
+            
+            let isValid = true;
+            
+            // التحقق من الاسم الكامل
+            if (!fullname) {
+                showMessage('fullname-error', 'يرجى إدخال الاسم الكامل', 'error');
+                isValid = false;
+            }
+            
+            // التحقق من رقم الهاتف
+            if (!phone) {
+                showMessage('reg-phone-error', 'يرجى إدخال رقم الهاتف', 'error');
+                isValid = false;
+            } else if (!/^[0-9]{10}$/.test(phone)) {
+                showMessage('reg-phone-error', 'رقم الهاتف يجب أن يتكون من 10 أرقام', 'error');
+                isValid = false;
+            } else {
+                const db = getDatabase();
+                const existingUser = db.users.find(u => u.phone === phone);
+                if (existingUser) {
+                    showMessage('reg-phone-error', 'رقم الهاتف مسجل بالفعل', 'error');
+                    isValid = false;
+                }
+            }
+            
+            // التحقق من كلمة المرور
+            if (!password) {
+                showMessage('reg-password-error', 'يرجى إدخال كلمة المرور', 'error');
+                isValid = false;
+            } else if (password.length < 6) {
+                showMessage('reg-password-error', 'كلمة المرور يجب أن تكون 6 أحرف على الأقل', 'error');
+                isValid = false;
+            }
+            
+            // التحقق من تأكيد كلمة المرور
+            if (!confirmPassword) {
+                showMessage('confirm-password-error', 'يرجى تأكيد كلمة المرور', 'error');
+                isValid = false;
+            } else if (password !== confirmPassword) {
+                showMessage('confirm-password-error', 'كلمات المرور غير متطابقة', 'error');
+                isValid = false;
+            }
+            
+            // التحقق من المحافظة
+            if (!province) {
+                showMessage('province-error', 'يرجى اختيار المحافظة', 'error');
+                isValid = false;
+            }
+            
+            // التحقق من المنطقة
+            if (!area) {
+                showMessage('area-error', 'يرجى اختيار المنطقة', 'error');
+                isValid = false;
+            }
+            
+            // التحقق من العنوان التفصيلي
+            if (!address) {
+                showMessage('address-error', 'يرجى إدخال العنوان التفصيلي', 'error');
+                isValid = false;
+            }
+            
+            if (!isValid) return;
+            
+            // إنشاء المستخدم الجديد
+            const newUser = {
+                id: Date.now(),
+                fullname: fullname,
+                phone: phone,
+                password: password,
+                province: province,
+                area: area,
+                address: address,
+                userType: 'user',
+                createdAt: new Date().toISOString()
+            };
+            
+            // حفظ المستخدم الجديد في قاعدة البيانات
+            const db = getDatabase();
+            db.users.push(newUser);
+            saveDatabase(db);
+            
+            // حفظ بيانات المستخدم الحالي
+            currentUser = {
+                id: newUser.id,
+                fullname: newUser.fullname,
+                phone: newUser.phone,
+                province: newUser.province,
+                area: newUser.area,
+                address: newUser.address,
+                userType: 'user'
+            };
+            
+            saveCurrentUser();
+            
+            // تذكر بيانات تسجيل الدخول
+            saveRememberedLogin(phone, password);
+            
+            showMessage('register-success', 'تم إنشاء حسابك بنجاح! يتم تحويلك الآن...', 'success');
+            showNotification('تم إنشاء حسابك بنجاح!', 'success');
+            
+            setTimeout(() => {
+                showPage('home-page');
+                updateUserInfo();
+                loadUserServices();
+            }, 2000);
+        });
+
+        function logout() {
+            currentUser = null;
+            localStorage.removeItem('currentUser');
+            showNotification('تم تسجيل الخروج', 'success');
+            showPage('public-page');
+        }
+
+        // ==================== تحديث معلومات المستخدم ====================
+        function updateUserInfo() {
+            if (!currentUser) return;
+            
+            document.getElementById('user-name').textContent = currentUser.fullname;
+            document.getElementById('user-phone').textContent = currentUser.phone;
+            document.getElementById('service-user-name').textContent = currentUser.fullname;
+            document.getElementById('orders-user-name').textContent = currentUser.fullname;
+            document.getElementById('admin-name').textContent = currentUser.fullname;
+        }
+
+        // ==================== إدارة الخدمات ====================
+        function loadPublicServices() {
+            const servicesGrid = document.querySelector('#public-page .services-grid');
+            if (!servicesGrid) return;
+            
+            servicesGrid.innerHTML = servicesData.map(service => `
+                <div class="service-card" onclick="showServicePreview('${service.name}')">
+                    <div class="service-icon" style="background-color: ${service.color}">
+                        <i class="fas fa-${service.icon}"></i>
+                    </div>
+                    <div class="service-info">
+                        <h3>${service.title}</h3>
+                        <p>${service.description}</p>
+                        <div class="service-price">بدءاً من <span class="currency">${service.price}</span></div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function loadUserServices() {
+            const servicesGrid = document.getElementById('user-services-grid');
+            if (!servicesGrid) return;
+            
+            servicesGrid.innerHTML = servicesData.map(service => `
+                <div class="service-card" onclick="selectService('${service.name}')">
+                    <div class="service-icon" style="background-color: ${service.color}">
+                        <i class="fas fa-${service.icon}"></i>
+                    </div>
+                    <div class="service-info">
+                        <h3>${service.title}</h3>
+                        <p>${service.description}</p>
+                        <div class="service-price">بدءاً من <span class="currency">${service.price}</span></div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function showServicePreview(serviceName) {
+            const service = servicesData.find(s => s.name === serviceName);
+            alert(`خدمة ${service.title}\n\n${service.description}\n\nالسعر: بدءاً من ${service.price}\n\nسجل الدخول لطلب هذه الخدمة!`);
+            showPage('login-page');
+        }
+
+        function selectService(serviceName) {
+            currentService = serviceName;
+            const service = servicesData.find(s => s.name === serviceName);
+            
+            document.getElementById('service-title').innerHTML = `
+                <i class="fas fa-${service.icon}"></i> ${service.title}
+            `;
+            
+            loadWorkers(serviceName);
+            showPage('service-page');
+        }
+
+        function loadWorkers(serviceName) {
+            const workersList = document.getElementById('workers-list');
+            const workerSelect = document.getElementById('selected-worker');
+            
+            workersList.innerHTML = '';
+            workerSelect.innerHTML = '<option value="">اختر فني</option>';
+            
+            // بيانات عمال افتراضية
+            const workers = {
+                كهرباء: [
+                    { id: 1, name: "محمد أحمد", specialty: "فني كهرباء", experience: "5 سنوات", price: "15 دينار", rating: 4.5 },
+                    { id: 2, name: "أحمد علي", specialty: "مهندس كهرباء", experience: "8 سنوات", price: "20 دينار", rating: 5 }
+                ],
+                سباكة: [
+                    { id: 3, name: "خالد سعيد", specialty: "فني سباكة", experience: "7 سنوات", price: "20 دينار", rating: 5 },
+                    { id: 4, name: "سالم محمد", specialty: "سباك محترف", experience: "10 سنوات", price: "25 دينار", rating: 4 }
+                ],
+                تمديدات: [
+                    { id: 5, name: "محمود حسن", specialty: "فني تمديدات", experience: "6 سنوات", price: "25 دينار", rating: 4.5 },
+                    { id: 6, name: "يوسف خالد", specialty: "مهندس تمديدات", experience: "9 سنوات", price: "30 دينار", rating: 5 }
+                ],
+                نجارة: [
+                    { id: 7, name: "علي عبدالله", specialty: "فني نجارة", experience: "8 سنوات", price: "18 دينار", rating: 4.5 },
+                    { id: 8, name: "ناصر محمد", specialty: "نجار محترف", experience: "12 سنوات", price: "25 دينار", rating: 5 }
+                ]
+            };
+            
+            if (workers[serviceName]) {
+                workers[serviceName].forEach(worker => {
+                    let stars = '';
+                    for (let i = 1; i <= 5; i++) {
+                        if (i <= Math.floor(worker.rating)) {
+                            stars += '<i class="fas fa-star"></i>';
+                        } else if (i === Math.ceil(worker.rating) && worker.rating % 1 !== 0) {
+                            stars += '<i class="fas fa-star-half-alt"></i>';
+                        } else {
+                            stars += '<i class="far fa-star"></i>';
+                        }
+                    }
+                    
+                    const workerCard = document.createElement('div');
+                    workerCard.className = 'worker-card';
+                    workerCard.innerHTML = `
+                        <img src="https://ui-avatars.com/api/?name=${worker.name}&background=40E0D0&color=003366&size=80" 
+                             alt="صورة ${worker.name}" class="worker-img">
+                        <div class="worker-info">
+                            <div class="worker-name">${worker.name}</div>
+                            <div class="worker-specialty">${worker.specialty}</div>
+                            <div class="worker-exp">${worker.experience} خبرة</div>
+                            <div class="worker-price">${worker.price}</div>
+                            <div class="rating">${stars}</div>
+                        </div>
+                    `;
+                    workersList.appendChild(workerCard);
+                    
+                    const option = document.createElement('option');
+                    option.value = worker.id;
+                    option.textContent = `${worker.name} - ${worker.specialty} - ${worker.price}`;
+                    workerSelect.appendChild(option);
+                });
+            } else {
+                workersList.innerHTML = '<p style="text-align: center; color: #666;">لا يوجد عمال متاحين لهذه الخدمة حالياً</p>';
+            }
+        }
+
+        // ==================== تقديم طلب الخدمة ====================
+        document.getElementById('maintenance-request').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // إخفاء جميع رسائل الخطأ
+            document.querySelectorAll('.error-message').forEach(msg => {
+                msg.style.display = 'none';
+            });
+            
+            const clientProvince = document.getElementById('client-province').value;
+            const clientArea = document.getElementById('client-area').value;
+            const clientAddress = document.getElementById('client-address').value.trim();
+            const workerId = document.getElementById('selected-worker').value;
+            const problemType = document.getElementById('problem-type').value;
+            const visitTime = document.getElementById('visit-time').value;
+            const notes = document.getElementById('notes').value;
+            
+            let isValid = true;
+            
+            // التحقق من المحافظة
+            if (!clientProvince) {
+                showMessage('province-error', 'يرجى اختيار المحافظة', 'error');
+                isValid = false;
+            }
+            
+            // التحقق من المنطقة
+            if (!clientArea) {
+                showMessage('area-error', 'يرجى اختيار المنطقة', 'error');
+                isValid = false;
+            }
+            
+            // التحقق من العنوان التفصيلي
+            if (!clientAddress) {
+                showMessage('address-error', 'يرجى إدخال العنوان التفصيلي', 'error');
+                isValid = false;
+            }
+            
+            // التحقق من الفني
+            if (!workerId) {
+                showNotification('يرجى اختيار فني', 'error');
+                isValid = false;
+            }
+            
+            // التحقق من نوع المشكلة
+            if (!problemType) {
+                showNotification('يرجى إدخال وصف المشكلة', 'error');
+                isValid = false;
+            }
+            
+            // التحقق من وقت الزيارة
+            if (!visitTime) {
+                showNotification('يرجى اختيار وقت الزيارة', 'error');
+                isValid = false;
+            }
+            
+            if (!isValid) return;
+            
+            // تحديث بيانات المستخدم في قاعدة البيانات
+            const db = getDatabase();
+            const userIndex = db.users.findIndex(u => u.id === currentUser.id);
+            if (userIndex !== -1) {
+                db.users[userIndex].province = clientProvince;
+                db.users[userIndex].area = clientArea;
+                db.users[userIndex].address = clientAddress;
+            }
+            
+            // تحديث بيانات المستخدم الحالي
+            currentUser.province = clientProvince;
+            currentUser.area = clientArea;
+            currentUser.address = clientAddress;
+            
+            // حفظ البيانات المحدثة
+            saveCurrentUser();
+            saveDatabase(db);
+            
+            // إنشاء الطلب
+            const order = {
+                id: Date.now(),
+                userId: currentUser.id,
+                service: currentService,
+                workerId: parseInt(workerId),
+                problemType: problemType,
+                visitTime: visitTime,
+                notes: notes,
+                status: ORDER_STATUS.PENDING,
+                statusHistory: [
+                    {
+                        status: ORDER_STATUS.PENDING,
+                        changedAt: new Date().toISOString(),
+                        changedBy: 'system',
+                        notes: 'تم تقديم الطلب'
+                    }
+                ],
+                createdAt: new Date().toISOString(),
+                address: clientAddress,
+                province: clientProvince,
+                area: clientArea
+            };
+            
+            db.orders.push(order);
+            saveDatabase(db);
+            
+            showNotification('تم إرسال طلبك بنجاح! ستتم مراجعته قريباً', 'success');
+            
+            setTimeout(() => {
+                showPage('user-orders-page');
+                loadUserOrdersList();
+            }, 2000);
+        });
+
+        // ==================== تحميل طلبات المستخدم ====================
+        function loadUserOrders() {
+            const userOrdersDiv = document.getElementById('user-orders');
+            if (!userOrdersDiv) return;
+            
+            const db = getDatabase();
+            const userOrders = db.orders.filter(order => order.userId === currentUser.id);
+            
+            if (userOrders.length === 0) {
+                userOrdersDiv.innerHTML = '<p>لا توجد طلبات سابقة</p>';
+                return;
+            }
+            
+            userOrdersDiv.innerHTML = userOrders.slice(0, 3).map(order => {
+                const service = servicesData.find(s => s.name === order.service);
+                const statusText = ORDER_STATUS_TEXT[order.status] || order.status;
+                
+                return `
+                    <div class="order-card ${getStatusClass(order.status)}">
+                        <div class="order-header">
+                            <div class="order-id">طلب #${order.id}</div>
+                            ${getStatusBadge(order.status)}
+                        </div>
+                        <div class="order-details">
+                            <div class="detail-item">
+                                <span class="detail-label">الخدمة</span>
+                                <span class="detail-value">${service?.title || order.service}</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">التاريخ</span>
+                                <span class="detail-value">${new Date(order.createdAt).toLocaleDateString('ar-SA')}</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">الحالة</span>
+                                <span class="detail-value">${statusText}</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function loadUserOrdersList() {
+            const ordersListDiv = document.getElementById('user-orders-list');
+            if (!ordersListDiv) return;
+            
+            const db = getDatabase();
+            const userOrders = db.orders.filter(order => order.userId === currentUser.id);
+            
+            if (userOrders.length === 0) {
+                ordersListDiv.innerHTML = `
+                    <div style="text-align: center; padding: 40px; color: #666;">
+                        <i class="fas fa-clipboard-list" style="font-size: 48px; margin-bottom: 20px; color: var(--turquoise);"></i>
+                        <h3>لا توجد طلبات</h3>
+                        <p>لم تقم بتقديم أي طلبات حتى الآن</p>
+                        <button onclick="showPage('home-page')" class="btn" style="margin-top: 20px;">
+                            <i class="fas fa-plus"></i> طلب خدمة جديدة
+                        </button>
+                    </div>
+                `;
+                return;
+            }
+            
+            // ترتيب الطلبات من الأحدث إلى الأقدم
+            userOrders.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+            
+            ordersListDiv.innerHTML = userOrders.map(order => {
+                const service = servicesData.find(s => s.name === order.service);
+                const statusText = ORDER_STATUS_TEXT[order.status] || order.status;
+                const lastUpdate = order.statusHistory && order.statusHistory.length > 0 
+                    ? order.statusHistory[order.statusHistory.length - 1] 
+                    : null;
+                
+                return `
+                    <div class="order-card ${getStatusClass(order.status)}">
+                        <div class="order-header">
+                            <div class="order-id">طلب #${order.id}</div>
+                            ${getStatusBadge(order.status)}
+                        </div>
+                        <div class="order-details">
+                            <div class="detail-item">
+                                <span class="detail-label">الخدمة</span>
+                                <span class="detail-value">${service?.title || order.service}</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">نوع المشكلة</span>
+                                <span class="detail-value">${order.problemType || 'غير محدد'}</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">الموعد المطلوب</span>
+                                <span class="detail-value">${order.visitTime ? new Date(order.visitTime).toLocaleString('ar-SA') : 'غير محدد'}</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">العنوان</span>
+                                <span class="detail-value">${order.address || 'غير محدد'}</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">تاريخ الطلب</span>
+                                <span class="detail-value">${new Date(order.createdAt).toLocaleDateString('ar-SA')}</span>
+                            </div>
+                        </div>
+                        ${lastUpdate ? `
+                        <div class="order-timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-icon active">
+                                    <i class="fas fa-info-circle"></i>
+                                </div>
+                                <div class="timeline-content">
+                                    <div>${lastUpdate.notes || 'تم تحديث حالة الطلب'}</div>
+                                    <div class="timeline-time">${new Date(lastUpdate.changedAt).toLocaleString('ar-SA')}</div>
+                                </div>
+                            </div>
+                        </div>
+                        ` : ''}
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // ==================== نافذة الموافقة ====================
+        function openApprovalModal(order) {
+            currentOrderForApproval = order;
+            const db = getDatabase();
+            const user = db.users.find(u => u.id === order.userId);
+            const service = servicesData.find(s => s.name === order.service);
+            
+            document.getElementById('approval-order-details').innerHTML = `
+                <div class="order-details">
+                    <div class="detail-item">
+                        <span class="detail-label">رقم الطلب</span>
+                        <span class="detail-value">#${order.id}</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">العميل</span>
+                        <span class="detail-value">${user?.fullname || 'غير معروف'}</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">رقم الهاتف</span>
+                        <span class="detail-value">${user?.phone || 'غير معروف'}</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">الخدمة</span>
+                        <span class="detail-value">${service?.title || order.service}</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">نوع المشكلة</span>
+                        <span class="detail-value">${order.problemType || 'غير محدد'}</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">العنوان</span>
+                        <span class="detail-value">${order.address || 'غير محدد'}</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">الموعد المطلوب</span>
+                        <span class="detail-value">${order.visitTime ? new Date(order.visitTime).toLocaleString('ar-SA') : 'غير محدد'}</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">ملاحظات</span>
+                        <span class="detail-value">${order.notes || 'لا توجد'}</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">الحالة الحالية</span>
+                        <span class="detail-value">${ORDER_STATUS_TEXT[order.status] || order.status}</span>
+                    </div>
+                </div>
+            `;
+            
+            document.getElementById('approval-modal').classList.add('active');
+        }
+
+        function closeApprovalModal() {
+            document.getElementById('approval-modal').classList.remove('active');
+            currentOrderForApproval = null;
+        }
+
+        function approveOrder() {
+            if (!currentOrderForApproval) return;
+            
+            const db = getDatabase();
+            const orderIndex = db.orders.findIndex(o => o.id === currentOrderForApproval.id);
+            if (orderIndex !== -1) {
+                db.orders[orderIndex].status = ORDER_STATUS.APPROVED;
+                db.orders[orderIndex].statusHistory.push({
+                    status: ORDER_STATUS.APPROVED,
+                    changedAt: new Date().toISOString(),
+                    changedBy: currentUser?.fullname || 'المسؤول',
+                    notes: 'تمت الموافقة على الطلب'
+                });
+                saveDatabase(db);
+                
+                showNotification('تمت الموافقة على الطلب بنجاح', 'success');
+                closeApprovalModal();
+                loadAdminTab('orders');
+                loadAdminStats();
+            }
+        }
+
+        function rejectOrder() {
+            if (!currentOrderForApproval) return;
+            
+            const db = getDatabase();
+            const orderIndex = db.orders.findIndex(o => o.id === currentOrderForApproval.id);
+            if (orderIndex !== -1) {
+                db.orders[orderIndex].status = ORDER_STATUS.REJECTED;
+                db.orders[orderIndex].statusHistory.push({
+                    status: ORDER_STATUS.REJECTED,
+                    changedAt: new Date().toISOString(),
+                    changedBy: currentUser?.fullname || 'المسؤول',
+                    notes: 'تم رفض الطلب'
+                });
+                saveDatabase(db);
+                
+                showNotification('تم رفض الطلب', 'success');
+                closeApprovalModal();
+                loadAdminTab('orders');
+                loadAdminStats();
+            }
+        }
+
+        function contactViaWhatsApp() {
+            if (!currentOrderForApproval) return;
+            
+            const db = getDatabase();
+            const user = db.users.find(u => u.id === currentOrderForApproval.userId);
+            const phoneNumber = user?.phone || '';
+            
+            // رسالة واتساب جاهزة
+            const message = `${WHATSAPP_MESSAGE_TEMPLATE}${currentOrderForApproval.id}\n\nاسم العميل: ${user?.fullname || 'غير معروف'}\nالخدمة: ${currentOrderForApproval.service}\nالمشكلة: ${currentOrderForApproval.problemType || 'غير محدد'}`;
+            
+            // تشفير الرسالة للرابط
+            const encodedMessage = encodeURIComponent(message);
+            
+            // افتح رابط واتساب
+            window.open(`https://wa.me/${ADMIN_WHATSAPP_NUMBER}?text=${encodedMessage}`, '_blank');
+            
+            showNotification('تم فتح واتساب للتواصل مع العميل', 'success');
+        }
+
+        // ==================== أحداث DOM ====================
+        document.querySelectorAll('.user-type-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const type = this.getAttribute('data-type');
+                
+                document.querySelectorAll('.user-type-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                document.querySelectorAll('.user-login-form, .admin-login-form').forEach(form => {
+                    form.classList.remove('active');
+                });
+                
+                if (type === 'admin') {
+                    document.getElementById('admin-login-form').classList.add('active');
+                } else {
+                    document.getElementById('login-form').classList.add('active');
+                }
+            });
+        });
+
+        document.querySelectorAll('.admin-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                const tabId = this.getAttribute('data-tab');
+                
+                document.querySelectorAll('.admin-tab').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+                
+                loadAdminTab(tabId);
+            });
+        });
+
+        function setupEventListeners() {
+            document.querySelectorAll('.service-tag').forEach(tag => {
+                tag.addEventListener('click', function() {
+                    const service = this.getAttribute('data-service');
+                    
+                    document.querySelectorAll('.service-tag').forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    filterServices(service);
+                });
+            });
+        }
+
+        function filterServices(serviceType) {
+            const servicesGrid = document.querySelector('#public-page .services-grid');
+            if (!servicesGrid) return;
+            
+            let filteredServices = servicesData;
+            if (serviceType !== 'all') {
+                filteredServices = servicesData.filter(s => s.name === serviceType);
+            }
+            
+            servicesGrid.innerHTML = filteredServices.map(service => `
+                <div class="service-card" onclick="showServicePreview('${service.name}')">
+                    <div class="service-icon" style="background-color: ${service.color}">
+                        <i class="fas fa-${service.icon}"></i>
+                    </div>
+                    <div class="service-info">
+                        <h3>${service.title}</h3>
+                        <p>${service.description}</p>
+                        <div class="service-price">بدءاً من <span class="currency">${service.price}</span></div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // ==================== دوال لوحة الإدارة ====================
+        function loadAdminStats() {
+            const db = getDatabase();
+            document.getElementById('total-users').textContent = db.users.length;
+            document.getElementById('total-orders').textContent = db.orders.length;
+            document.getElementById('total-workers').textContent = db.workers.length;
+            
+            const pendingOrders = db.orders.filter(o => o.status === ORDER_STATUS.PENDING).length;
+            document.getElementById('pending-orders').textContent = pendingOrders;
+        }
+
+        function loadAdminTab(tabName) {
+            const adminContent = document.querySelector('.admin-content');
+            const db = getDatabase();
+            
+            switch(tabName) {
+                case 'users':
+                    adminContent.innerHTML = `
+                        <div class="admin-actions">
+                            <h3 class="section-subtitle">إدارة المستخدمين (${db.users.length})</h3>
+                        </div>
+                        <table class="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>الاسم</th>
+                                    <th>رقم الهاتف</th>
+                                    <th>المحافظة</th>
+                                    <th>المنطقة</th>
+                                    <th>العنوان التفصيلي</th>
+                                    <th>تاريخ التسجيل</th>
+                                    <th>عدد الطلبات</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                ${db.users.map((user, index) => {
+                                    const userOrders = db.orders.filter(o => o.userId === user.id).length;
+                                    return `
+                                        <tr>
+                                            <td>${index + 1}</td>
+                                            <td>${user.fullname}</td>
+                                            <td>${user.phone}</td>
+                                            <td>${user.province || 'غير محدد'}</td>
+                                            <td>${user.area || 'غير محدد'}</td>
+                                            <td>${user.address || 'غير محدد'}</td>
+                                            <td>${new Date(user.createdAt).toLocaleDateString('ar-SA')}</td>
+                                            <td>${userOrders}</td>
+                                        </tr>
+                                    `;
+                                }).join('')}
+                            </tbody>
+                        </table>
+                    `;
+                    break;
+                    
+                case 'workers':
+                    adminContent.innerHTML = `
+                        <div class="admin-actions">
+                            <h3 class="section-subtitle">إدارة العمال (${db.workers.length})</h3>
+                            <button class="btn" onclick="addWorker()">إضافة فني جديد</button>
+                        </div>
+                        <table class="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>الاسم</th>
+                                    <th>التخصص</th>
+                                    <th>الخبرة</th>
+                                    <th>السعر</th>
+                                    <th>الحالة</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                ${db.workers.map((worker, index) => `
+                                    <tr>
+                                        <td>${index + 1}</td>
+                                        <td>${worker.name}</td>
+                                        <td>${worker.specialty}</td>
+                                        <td>${worker.experience}</td>
+                                        <td><span class="currency">${worker.price}</span></td>
+                                        <td>
+                                            <span class="badge ${worker.status === 'available' ? 'badge-success' : 'badge-warning'}">
+                                                ${worker.status === 'available' ? 'نشط' : 'مشغول'}
+                                            </span>
+                                        </td>
+                                    </tr>
+                                `).join('')}
+                            </tbody>
+                        </table>
+                    `;
+                    break;
+                    
+                case 'orders':
+                    adminContent.innerHTML = `
+                        <div class="admin-actions">
+                            <h3 class="section-subtitle">الطلبات (${db.orders.length})</h3>
+                            <div>
+                                <button class="action-btn" onclick="filterOrders('pending')">عرض المعلقة</button>
+                                <button class="action-btn" onclick="filterOrders('approved')">عرض المقبولة</button>
+                                <button class="action-btn" onclick="filterOrders('all')">الكل</button>
+                            </div>
+                        </div>
+                        <table class="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>العميل</th>
+                                    <th>الخدمة</th>
+                                    <th>المشكلة</th>
+                                    <th>العنوان</th>
+                                    <th>التاريخ</th>
+                                    <th>الحالة</th>
+                                    <th>الإجراءات</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                ${db.orders.map((order, index) => {
+                                    const user = db.users.find(u => u.id === order.userId);
+                                    const service = servicesData.find(s => s.name === order.service);
+                                    const statusText = ORDER_STATUS_TEXT[order.status] || order.status;
+                                    
+                                    return `
+                                        <tr>
+                                            <td>${index + 1}</td>
+                                            <td>${user?.fullname || 'غير معروف'}</td>
+                                            <td>${service?.title || order.service}</td>
+                                            <td>${order.problemType || 'غير محدد'}</td>
+                                            <td>${order.address || 'غير محدد'}</td>
+                                            <td>${new Date(order.createdAt).toLocaleDateString('ar-SA')}</td>
+                                            <td>${getStatusBadge(order.status)}</td>
+                                            <td>
+                                                ${order.status === ORDER_STATUS.PENDING ? `
+                                                    <button class="action-btn approve" onclick="openApprovalModal(${JSON.stringify(order).replace(/"/g, '&quot;')})">
+                                                        <i class="fas fa-check"></i> معالجة
+                                                    </button>
+                                                ` : ''}
+                                                <button class="action-btn whatsapp" onclick="contactOrderViaWhatsApp(${order.id})">
+                                                    <i class="fab fa-whatsapp"></i> واتساب
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    `;
+                                }).join('')}
+                            </tbody>
+                        </table>
+                    `;
+                    break;
+                    
+                case 'services':
+                    adminContent.innerHTML = `
+                        <div class="admin-actions">
+                            <h3 class="section-subtitle">الخدمات (${servicesData.length})</h3>
+                        </div>
+                        <table class="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>الخدمة</th>
+                                    <th>الوصف</th>
+                                    <th>السعر</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                ${servicesData.map((service, index) => `
+                                    <tr>
+                                        <td>${index + 1}</td>
+                                        <td>${service.title}</td>
+                                        <td>${service.description}</td>
+                                        <td><span class="currency">${service.price}</span></td>
+                                    </tr>
+                                `).join('')}
+                            </tbody>
+                        </table>
+                    `;
+                    break;
+            }
+        }
+
+        function filterOrders(status) {
+            // يمكن إضافة فلتر للطلبات حسب الحالة
+            loadAdminTab('orders');
+        }
+
+        function contactOrderViaWhatsApp(orderId) {
+            const db = getDatabase();
+            const order = db.orders.find(o => o.id === orderId);
+            if (!order) return;
+            
+            const user = db.users.find(u => u.id === order.userId);
+            if (!user) return;
+            
+            // رسالة واتساب جاهزة
+            const message = `${WHATSAPP_MESSAGE_TEMPLATE}${order.id}\n\nاسم العميل: ${user.fullname}\nرقم الهاتف: ${user.phone}\nالخدمة: ${order.service}\nالمشكلة: ${order.problemType || 'غير محدد'}\nالعنوان: ${order.address || 'غير محدد'}`;
+            
+            // تشفير الرسالة للرابط
+            const encodedMessage = encodeURIComponent(message);
+            
+            // افتح رابط واتساب
+            window.open(`https://wa.me/${ADMIN_WHATSAPP_NUMBER}?text=${encodedMessage}`, '_blank');
+            
+            showNotification('تم فتح واتساب للتواصل مع العميل', 'success');
+        }
+
+        function addWorker() {
+            const name = prompt('أدخل اسم الفني:');
+            if (!name) return;
+            
+            const specialty = prompt('أدخل تخصص الفني:');
+            if (!specialty) return;
+            
+            const experience = prompt('أدخل سنوات الخبرة:');
+            const price = prompt('أدخل السعر:');
+            
+            const db = getDatabase();
+            const newWorker = {
+                id: Date.now(),
+                name: name,
+                specialty: specialty,
+                experience: experience || '0 سنوات',
+                price: price || '0 دينار',
+                rating: 0,
+                status: 'available'
+            };
+            
+            db.workers.push(newWorker);
+            saveDatabase(db);
+            loadAdminTab('workers');
+            loadAdminStats();
+            
+            showNotification('تم إضافة الفني بنجاح', 'success');
+        }
+    </script>
+</body>
+</html>
